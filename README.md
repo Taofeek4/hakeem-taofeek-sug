@@ -1,48 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
+# Hakeem Taofeek Ayinde — SUP_GUYZ
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+## About
 
-  <title>Hakeem Taofeek Ayinde (SUP_GUYZ) | Assistant General Secretary, SUG</title>
+Hakeem Taofeek Ayinde, popularly known as **SUP_GUYZ**, is a student of the Federal College of Animal Health and Production Technology.
 
-  <meta name="description" content="Hakeem Taofeek Ayinde, popularly known as SUP_GUYZ, is a student of the Federal College of Animal Health and Production Technology and Assistant General Secretary of SUG. He is also CEO of Tao Media Academy and Netpay.">
+He serves as the **Assistant General Secretary of the Students' Union Government (SUG)**.
 
-  <meta name="keywords" content="Hakeem Taofeek Ayinde, SUP_GUYZ, Sup_Guy, Assistant General Secretary SUG, FCAHPT, Federal College of Animal Health and Production Technology, Tao Media Academy, Netpay">
+According to the supplied 2026 SUG election results attributed to the Independent Moor Electoral Commission (IMEC), the candidate listed as **Sup_Guy** received **401 votes** and was marked **ELECTED** for the Assistant General Secretary position.
 
-  <meta name="robots" content="index, follow">
+## Entrepreneurship
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+Hakeem Taofeek Ayinde also identifies as:
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f8f5;
-      color: #14251d;
-      line-height: 1.7;
-    }
+- CEO of Tao Media Academy
+- CEO of Netpay
 
-    header {
-      background: linear-gradient(135deg, #0b3d27, #197044);
-      color: white;
-      padding: 70px 20px;
-      text-align: center;
-    }
+Visit Netpay: https://netpay.com.ng
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 0 20px;
-    }
+## SUG Position
 
-    .school {
-      text-transform: uppercase;
-      letter-spacing: 1px;
+**Position:** Assistant General Secretary  
+**Election:** 2026 SUG Elections  
+**Candidate name on result:** Sup_Guy  
+**Votes:** 401  
+**Result:** ELECTED
+
+## Website
+
+This repository contains the public profile webpage for Hakeem Taofeek Ayinde (SUP_GUYZ).      letter-spacing: 1px;
       font-size: 14px;
       opacity: 0.9;
       margin-bottom: 15px;
