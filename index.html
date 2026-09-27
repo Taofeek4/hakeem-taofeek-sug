@@ -249,55 +249,200 @@ google-site-verification: google665a036e5eef07aa.html
   </div>
 
 </header>
-<!-- Official Social Media Handles -->
-<section id="social-media" class="social-media">
-    <h2>Official Social Media Handles</h2>
+<!-- OFFICIAL SOCIAL MEDIA HANDLES -->
+<section id="social-media" class="social-media-section">
 
-    <p>
-        These are some of the official social media handles of
-        <strong>Hakeem Taofeek Ayinde (SUP_GUYZ)</strong>.
-        Kindly follow the official pages to stay updated.
-    </p>
+    <div class="social-header">
+        <span class="social-label">OFFICIAL ACCOUNTS</span>
 
-    <div class="social-links">
+        <h2>Official Social Media Handles</h2>
 
         <p>
-            <strong>X (Twitter):</strong>
-            <a href="https://x.com/Taomediaacademy"
-               target="_blank"
-               rel="noopener noreferrer">
-                @Taomediaacademy
-            </a>
+            These are some of the official social media accounts of
+            <strong>Hakeem Taofeek Ayinde (SUP_GUYZ)</strong>.
+            Kindly follow the official pages to stay updated.
         </p>
+    </div>
 
-        <p>
-            <strong>Facebook:</strong>
-            <a href="https://www.facebook.com/share/1E6sE4tFox/"
-               target="_blank"
-               rel="noopener noreferrer">
-                Official Facebook Page
-            </a>
-        </p>
+    <div class="social-cards">
 
-        <p>
-            <strong>TikTok:</strong>
-            <a href="https://www.tiktok.com/@sup_guyz001?_r=1&_t=ZN-9A4hqjFf8lC"
-               target="_blank"
-               rel="noopener noreferrer">
-                @sup_guyz001
-            </a>
-        </p>
+        <!-- X -->
+        <a
+            href="https://x.com/Taomediaacademy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card"
+        >
+            <div class="social-icon x-icon">𝕏</div>
+
+            <div class="social-info">
+                <span>X (Twitter)</span>
+                <strong>@Taomediaacademy</strong>
+            </div>
+
+            <span class="social-arrow">↗</span>
+        </a>
+
+
+        <!-- Facebook -->
+        <a
+            href="https://www.facebook.com/share/1E6sE4tFox/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card"
+        >
+            <div class="social-icon facebook-icon">f</div>
+
+            <div class="social-info">
+                <span>Facebook</span>
+                <strong>Official Facebook Page</strong>
+            </div>
+
+            <span class="social-arrow">↗</span>
+        </a>
+
+
+        <!-- TikTok -->
+        <a
+            href="https://www.tiktok.com/@sup_guyz001?_r=1&_t=ZN-9A4hqjFf8lC"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card"
+        >
+            <div class="social-icon tiktok-icon">♪</div>
+
+            <div class="social-info">
+                <span>TikTok</span>
+                <strong>@sup_guyz001</strong>
+            </div>
+
+            <span class="social-arrow">↗</span>
+        </a>
 
     </div>
+
+    <p class="social-note">
+        Follow the official accounts for updates from Hakeem Taofeek Ayinde.
+    </p>
+
 </section>
 
-<main>
 
-<div class="container">
+<!-- SOCIAL MEDIA CSS -->
+<style>
+.social-media-section {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 40px 25px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
 
-<div class="grid">
+.social-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.social-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    color: #16834b;
+}
 
+.social-header h2 {
+    margin: 0 0 12px;
+    font-size: 30px;
+    color: #176b42;
+}
+
+.social-header p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #555;
+}
+
+.social-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 17px 18px;
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    background: #fafafa;
+    transition: all 0.25s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: #16834b;
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.x-icon {
+    background: #000000;
+}
+
+.facebook-icon {
+    background: #1877f2;
+    font-family: Arial, sans-serif;
+}
+
+.tiktok-icon {
+    background: #111111;
+}
+
+.social-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.social-info span {
+    font-size: 13px;
+    color: #777;
+}
+
+.social-info strong {
+    font-size: 16px;
+    color: #222;
+}
+
+.social-arrow {
+    font-size: 22px;
+    color: #16834b;
+    font-weight: bold;
+}
+
+.social-note {
+    text
 <!-- ABOUT -->
 
 <section class="card full" id="about">
