@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
 <meta name="google-site-verification" content="IPFIKmFvtoQdLbRA_IsdgafdKXvmxO_IPjUXM6lC2Ks">
 
@@ -10,10 +10,10 @@
 
 <meta name="description" content="Official website of Hakeem Taofeek Ayinde, popularly known as SUP_GUYZ — student leader, digital entrepreneur, technology enthusiast, founder of Tao Media Academy and Netpay.">
 
-<meta name="keywords" content="Hakeem Taofeek Ayinde, SUP_GUYZ, Sup Guyz, Tao Media Academy, Netpay, cheap data, cheap data website, buy data online Nigeria, airtime website, VTU website, digital services Nigeria, SUG Assistant General Secretary, MSSN PRO">
+<meta name="keywords" content="Hakeem Taofeek Ayinde, SUP_GUYZ, Sup Guyz, Tao Media Academy, Netpay, cheap data, buy data online Nigeria, airtime website, VTU website, digital services Nigeria, SUG Assistant General Secretary, MSSN PRO">
 
 <meta name="author" content="Hakeem Taofeek Ayinde">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index,follow">
 
 <link rel="canonical" href="https://taofeek4.github.io/hakeem-taofeek-sug/">
 
@@ -29,7 +29,6 @@
  "name":"Hakeem Taofeek Ayinde",
  "alternateName":"SUP_GUYZ",
  "url":"https://taofeek4.github.io/hakeem-taofeek-sug/",
- "description":"Student leader, digital entrepreneur and technology enthusiast.",
  "jobTitle":["SUG Assistant General Secretary","MSSN PRO"],
  "sameAs":[
   "https://www.facebook.com/profile.php?id=61594599100468",
@@ -42,618 +41,717 @@
 </script>
 
 <style>
+
 :root{
- --green:#087f3f;
- --dark:#05632f;
- --deep:#06351d;
- --light:#eaf7ef;
- --lighter:#f4fbf6;
- --white:#fff;
- --text:#17221b;
- --muted:#657168;
- --border:#dce9df;
- --shadow:0 15px 45px rgba(0,0,0,.08);
+--g:#087f3f;
+--dg:#05632f;
+--deep:#06351d;
+--l:#eaf7ef;
+--bg:#f4fbf6;
+--w:#fff;
+--t:#17221b;
+--m:#657168;
+--b:#dce9df;
+--shadow:0 15px 45px #00000012;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
 
-html{scroll-behavior:smooth}
+html{
+scroll-behavior:smooth;
+}
 
 body{
- font-family:Arial,Helvetica,sans-serif;
- background:var(--lighter);
- color:var(--text);
- line-height:1.7;
- overflow-x:hidden;
- transition:.3s;
+font-family:Arial,Helvetica,sans-serif;
+background:var(--bg);
+color:var(--t);
+line-height:1.7;
+overflow-x:hidden;
+transition:.3s;
 }
 
 body.dark{
- --lighter:#0c1510;
- --white:#111c15;
- --text:#f1f7f3;
- --muted:#a9b9ae;
- --border:#26392d;
- --light:#15291d;
- --deep:#020d07;
+--bg:#0b140f;
+--w:#111c15;
+--t:#f1f7f3;
+--m:#a9b9ae;
+--b:#26392d;
+--l:#15291d;
+--deep:#020d07;
 }
 
-a{text-decoration:none;color:inherit}
+a{
+text-decoration:none;
+color:inherit;
+}
 
 .container{
- width:min(1120px,90%);
- margin:auto;
+width:min(1120px,90%);
+margin:auto;
+}
+
+#progress{
+position:fixed;
+top:0;
+left:0;
+height:3px;
+width:0;
+background:var(--g);
+z-index:2000;
 }
 
 nav{
- position:sticky;
- top:0;
- z-index:999;
- background:rgba(255,255,255,.94);
- backdrop-filter:blur(15px);
- border-bottom:1px solid var(--border);
- padding:14px 5%;
- display:flex;
- align-items:center;
- justify-content:space-between;
+position:sticky;
+top:0;
+z-index:1000;
+background:#ffffffef;
+backdrop-filter:blur(15px);
+border-bottom:1px solid var(--b);
+padding:14px 5%;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
-body.dark nav{background:rgba(17,28,21,.94)}
+body.dark nav{
+background:#111c15ef;
+}
 
 .logo{
- font-size:23px;
- font-weight:900;
- color:var(--green);
+font-size:23px;
+font-weight:900;
+color:var(--g);
 }
 
-.logo span{color:var(--text)}
+.logo span{
+color:var(--t);
+}
 
 .navlinks{
- display:flex;
- gap:22px;
- list-style:none;
+display:flex;
+gap:22px;
+list-style:none;
 }
 
 .navlinks a{
- font-size:14px;
- font-weight:700;
+font-size:14px;
+font-weight:700;
 }
 
-.navlinks a:hover{color:var(--green)}
+.navlinks a:hover{
+color:var(--g);
+}
 
 .nav-actions{
- display:flex;
- align-items:center;
- gap:10px;
+display:flex;
+gap:9px;
 }
 
-.theme,.menu{
- border:1px solid var(--border);
- background:var(--white);
- color:var(--text);
- width:40px;
- height:40px;
- border-radius:9px;
- cursor:pointer;
- font-size:17px;
+.nav-btn{
+border:1px solid var(--b);
+background:var(--w);
+color:var(--t);
+width:40px;
+height:40px;
+border-radius:9px;
+cursor:pointer;
+font-size:17px;
 }
 
-.menu{display:none}
+.menu{
+display:none;
+}
 
 .hero{
- position:relative;
- padding:90px 0;
- overflow:hidden;
- background:
- radial-gradient(circle at 85% 20%,#ccefd9,transparent 25%),
- linear-gradient(135deg,#eaf7ef,#fff);
+padding:90px 0;
+position:relative;
+overflow:hidden;
+background:
+radial-gradient(circle at 85% 20%,#ccefd9,transparent 25%),
+linear-gradient(135deg,#eaf7ef,#fff);
 }
 
 body.dark .hero{
- background:
- radial-gradient(circle at 85% 20%,#163b25,transparent 25%),
- linear-gradient(135deg,#0d1c13,#0c1510);
+background:
+radial-gradient(circle at 85% 20%,#163b25,transparent 25%),
+linear-gradient(135deg,#0d1c13,#0b140f);
 }
 
 .hero-grid{
- display:grid;
- grid-template-columns:1.4fr .8fr;
- gap:60px;
- align-items:center;
+display:grid;
+grid-template-columns:1.4fr .8fr;
+gap:60px;
+align-items:center;
 }
 
-.badge{
- display:inline-block;
- padding:7px 15px;
- border-radius:30px;
- background:var(--light);
- color:var(--green);
- font-size:13px;
- font-weight:800;
- margin-bottom:18px;
- animation:fadeUp .8s ease;
+.badge,.tag{
+display:inline-block;
+padding:7px 14px;
+border-radius:30px;
+background:var(--l);
+color:var(--g);
+font-size:12px;
+font-weight:800;
 }
 
 .hero h1{
- font-size:clamp(45px,7vw,78px);
- line-height:1;
- margin-bottom:22px;
- animation:fadeUp 1s ease;
+font-size:clamp(45px,7vw,78px);
+line-height:1;
+margin:18px 0 22px;
 }
 
-.hero h1 span{color:var(--green)}
+.hero h1 span{
+color:var(--g);
+}
 
 .hero-text{
- max-width:650px;
- color:var(--muted);
- font-size:18px;
- animation:fadeUp 1.2s ease;
+max-width:650px;
+color:var(--m);
+font-size:18px;
 }
 
 .buttons{
- display:flex;
- gap:12px;
- flex-wrap:wrap;
- margin-top:28px;
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:28px;
 }
 
 .btn{
- display:inline-block;
- padding:13px 22px;
- border-radius:9px;
- font-weight:800;
- transition:.25s;
+display:inline-block;
+padding:13px 22px;
+border-radius:9px;
+font-weight:800;
+transition:.25s;
 }
 
 .primary{
- background:var(--green);
- color:white;
+background:var(--g);
+color:#fff;
 }
 
 .primary:hover{
- background:var(--dark);
- transform:translateY(-3px);
+background:var(--dg);
+transform:translateY(-3px);
 }
 
 .outline{
- border:2px solid var(--green);
- color:var(--green);
+border:2px solid var(--g);
+color:var(--g);
 }
 
 .outline:hover{
- background:var(--green);
- color:white;
+background:var(--g);
+color:#fff;
 }
 
 .profile{
- background:var(--white);
- padding:30px;
- border-radius:22px;
- text-align:center;
- box-shadow:var(--shadow);
- border:1px solid var(--border);
- animation:float 4s ease-in-out infinite;
+background:var(--w);
+padding:30px;
+border-radius:22px;
+text-align:center;
+box-shadow:var(--shadow);
+border:1px solid var(--b);
+animation:float 4s ease-in-out infinite;
 }
 
 .profile img{
- width:205px;
- height:205px;
- object-fit:cover;
- border-radius:50%;
- border:7px solid var(--light);
+width:205px;
+height:205px;
+object-fit:cover;
+border-radius:50%;
+border:7px solid var(--l);
 }
 
 .profile h2{
- margin-top:15px;
- font-size:25px;
+margin-top:15px;
+font-size:25px;
 }
 
 .alias{
- color:var(--green);
- font-weight:900;
- font-size:19px;
+color:var(--g);
+font-weight:900;
+font-size:19px;
 }
 
 .profile p{
- color:var(--muted);
- font-size:14px;
- margin-top:7px;
+color:var(--m);
+font-size:14px;
+margin-top:7px;
 }
 
 .status{
- display:inline-flex;
- align-items:center;
- gap:7px;
- margin-top:15px;
- font-size:13px;
- color:var(--green);
- font-weight:700;
+display:inline-flex;
+align-items:center;
+gap:7px;
+margin-top:15px;
+font-size:13px;
+color:var(--g);
+font-weight:700;
 }
 
 .dot{
- width:9px;
- height:9px;
- background:#18a957;
- border-radius:50%;
- box-shadow:0 0 0 5px #18a95722;
+width:9px;
+height:9px;
+background:#18a957;
+border-radius:50%;
+box-shadow:0 0 0 5px #18a95722;
 }
 
-section{padding:85px 0}
+section{
+padding:85px 0;
+}
 
 .section-head{
- text-align:center;
- margin-bottom:45px;
+text-align:center;
+margin-bottom:45px;
 }
 
 .section-head h2{
- font-size:38px;
- line-height:1.2;
- margin-bottom:8px;
+font-size:38px;
+line-height:1.2;
+margin-bottom:8px;
 }
 
-.section-head p{color:var(--muted)}
+.section-head p{
+color:var(--m);
+}
 
 .about{
- background:var(--white);
+background:var(--w);
 }
 
 .about-content{
- max-width:850px;
- margin:auto;
- text-align:center;
- font-size:17px;
- color:var(--muted);
+max-width:850px;
+margin:auto;
+text-align:center;
+font-size:17px;
+color:var(--m);
 }
 
-.about-content strong{color:var(--text)}
+.about-content strong{
+color:var(--t);
+}
 
 .stats{
- display:grid;
- grid-template-columns:repeat(4,1fr);
- gap:15px;
- margin-top:40px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+margin-top:40px;
 }
 
 .stat{
- background:var(--light);
- padding:25px 15px;
- border-radius:15px;
- text-align:center;
+background:var(--l);
+padding:25px 15px;
+border-radius:15px;
+text-align:center;
 }
 
 .stat strong{
- display:block;
- color:var(--green);
- font-size:30px;
+display:block;
+color:var(--g);
+font-size:30px;
 }
 
 .stat span{
- color:var(--muted);
- font-size:13px;
+color:var(--m);
+font-size:13px;
 }
 
 .cards{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:22px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
 }
 
 .card{
- background:var(--white);
- border:1px solid var(--border);
- padding:28px;
- border-radius:17px;
- box-shadow:0 8px 25px rgba(0,0,0,.04);
- transition:.3s;
+background:var(--w);
+border:1px solid var(--b);
+padding:28px;
+border-radius:17px;
+box-shadow:0 8px 25px #00000008;
+transition:.3s;
 }
 
 .card:hover{
- transform:translateY(-7px);
- box-shadow:var(--shadow);
- border-color:#9bd2ad;
+transform:translateY(-7px);
+box-shadow:var(--shadow);
+border-color:#9bd2ad;
 }
 
 .icon{
- width:50px;
- height:50px;
- border-radius:12px;
- display:grid;
- place-items:center;
- background:var(--light);
- color:var(--green);
- font-size:23px;
- margin-bottom:18px;
+width:50px;
+height:50px;
+border-radius:12px;
+display:grid;
+place-items:center;
+background:var(--l);
+color:var(--g);
+font-size:23px;
+margin-bottom:18px;
 }
 
 .card h3{
- margin-bottom:9px;
- color:var(--green);
+margin-bottom:9px;
+color:var(--g);
 }
 
-.card p{color:var(--muted)}
+.card p{
+color:var(--m);
+}
+
+.tabs{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:28px;
+}
+
+.tab{
+padding:10px 18px;
+border:1px solid var(--b);
+background:var(--w);
+color:var(--t);
+border-radius:30px;
+cursor:pointer;
+font-weight:700;
+}
+
+.tab.active,
+.tab:hover{
+background:var(--g);
+color:#fff;
+border-color:var(--g);
+}
+
+.tab-content{
+display:none;
+}
+
+.tab-content.active{
+display:block;
+}
 
 .skills{
- background:var(--light);
+background:var(--l);
 }
 
 .skill{
- margin-bottom:20px;
+margin-bottom:20px;
 }
 
 .skill-top{
- display:flex;
- justify-content:space-between;
- font-weight:700;
- margin-bottom:7px;
+display:flex;
+justify-content:space-between;
+font-weight:700;
+margin-bottom:7px;
 }
 
 .bar{
- height:9px;
- background:var(--border);
- border-radius:20px;
- overflow:hidden;
+height:9px;
+background:var(--b);
+border-radius:20px;
+overflow:hidden;
 }
 
 .bar span{
- display:block;
- height:100%;
- width:0;
- background:var(--green);
- border-radius:20px;
- transition:1.5s ease;
+display:block;
+height:100%;
+width:0;
+background:var(--g);
+border-radius:20px;
+transition:1.4s ease;
 }
 
 .timeline{
- max-width:850px;
- margin:auto;
- border-left:3px solid var(--green);
- padding-left:30px;
+max-width:850px;
+margin:auto;
+border-left:3px solid var(--g);
+padding-left:30px;
 }
 
 .timeline-item{
- position:relative;
- background:var(--white);
- border:1px solid var(--border);
- padding:23px;
- border-radius:13px;
- margin-bottom:20px;
+position:relative;
+background:var(--w);
+border:1px solid var(--b);
+padding:23px;
+border-radius:13px;
+margin-bottom:20px;
 }
 
 .timeline-item:before{
- content:"";
- position:absolute;
- width:13px;
- height:13px;
- background:var(--green);
- border-radius:50%;
- left:-38px;
- top:28px;
- border:4px solid var(--lighter);
+content:"";
+position:absolute;
+width:13px;
+height:13px;
+background:var(--g);
+border-radius:50%;
+left:-38px;
+top:28px;
+border:4px solid var(--bg);
 }
 
 .timeline-item small{
- color:var(--green);
- font-weight:800;
+color:var(--g);
+font-weight:800;
 }
 
-.timeline-item h3{margin:5px 0}
+.timeline-item h3{
+margin:5px 0;
+}
 
-.timeline-item p{color:var(--muted)}
+.timeline-item p{
+color:var(--m);
+}
 
 .projects{
- background:var(--white);
+background:var(--w);
 }
 
 .project-card{
- position:relative;
- overflow:hidden;
+position:relative;
+overflow:hidden;
 }
 
 .project-card.featured{
- border:2px solid var(--green);
-}
-
-.project-tag{
- display:inline-block;
- background:var(--light);
- color:var(--green);
- padding:5px 10px;
- border-radius:20px;
- font-size:11px;
- font-weight:800;
- margin-bottom:15px;
+border:2px solid var(--g);
 }
 
 .netpay{
- background:linear-gradient(135deg,var(--green),var(--dark));
- color:white;
+background:linear-gradient(135deg,var(--g),var(--dg));
+color:#fff;
 }
 
-.netpay .section-head p{color:#dcefe3}
+.netpay .section-head p{
+color:#dcefe3;
+}
 
 .netpay .card{
- background:#075b2d;
- border-color:#39885b;
+background:#075b2d;
+border-color:#39885b;
 }
 
-.netpay .card h3{color:white}
+.netpay .card h3{
+color:#fff;
+}
 
-.netpay .card p{color:#dcefe3}
+.netpay .card p{
+color:#dcefe3;
+}
 
 .netpay .btn{
- background:white;
- color:var(--green);
- margin-top:18px;
+background:#fff;
+color:var(--g);
+margin-top:18px;
 }
 
 .social-grid{
- display:grid;
- grid-template-columns:repeat(4,1fr);
- gap:15px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
 }
 
 .social-card{
- background:var(--white);
- border:1px solid var(--border);
- border-radius:14px;
- padding:22px;
- text-align:center;
- font-weight:800;
- transition:.25s;
+background:var(--w);
+border:1px solid var(--b);
+border-radius:14px;
+padding:22px;
+text-align:center;
+font-weight:800;
+transition:.25s;
 }
 
 .social-card:hover{
- transform:translateY(-5px);
- color:var(--green);
- border-color:var(--green);
+transform:translateY(-5px);
+color:var(--g);
+border-color:var(--g);
 }
 
 .social-icon{
- font-size:27px;
- margin-bottom:8px;
+font-size:27px;
+margin-bottom:8px;
 }
 
 .cta{
- background:var(--light);
- text-align:center;
+background:var(--l);
+text-align:center;
 }
 
 .cta h2{
- font-size:38px;
- margin-bottom:10px;
+font-size:38px;
+margin-bottom:10px;
 }
 
 .cta p{
- color:var(--muted);
- margin-bottom:25px;
+color:var(--m);
+margin-bottom:25px;
 }
 
 footer{
- background:var(--deep);
- color:white;
- padding:35px 0;
- text-align:center;
+background:var(--deep);
+color:#fff;
+padding:35px 0;
+text-align:center;
 }
 
 footer p{
- color:#c8ded0;
- font-size:13px;
+color:#c8ded0;
+font-size:13px;
 }
 
 .top{
- position:fixed;
- right:20px;
- bottom:20px;
- width:45px;
- height:45px;
- border:0;
- border-radius:50%;
- background:var(--green);
- color:white;
- cursor:pointer;
- font-size:18px;
- display:none;
- box-shadow:var(--shadow);
+position:fixed;
+right:20px;
+bottom:20px;
+width:45px;
+height:45px;
+border:0;
+border-radius:50%;
+background:var(--g);
+color:#fff;
+cursor:pointer;
+font-size:18px;
+display:none;
+z-index:900;
 }
 
 .reveal{
- opacity:0;
- transform:translateY(30px);
- transition:opacity .7s,transform .7s;
+opacity:0;
+transform:translateY(28px);
+transition:.7s;
 }
 
 .reveal.show{
- opacity:1;
- transform:translateY(0);
+opacity:1;
+transform:translateY(0);
 }
 
-@keyframes fadeUp{
- from{opacity:0;transform:translateY(25px)}
- to{opacity:1;transform:translateY(0)}
+.toast{
+position:fixed;
+left:50%;
+bottom:25px;
+transform:translate(-50%,30px);
+background:var(--deep);
+color:#fff;
+padding:12px 18px;
+border-radius:9px;
+opacity:0;
+pointer-events:none;
+transition:.3s;
+z-index:3000;
+font-size:14px;
+}
+
+.toast.show{
+opacity:1;
+transform:translate(-50%,0);
 }
 
 @keyframes float{
- 0%,100%{transform:translateY(0)}
- 50%{transform:translateY(-8px)}
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-8px)}
 }
 
 @media(max-width:850px){
 
- .navlinks{
-  display:none;
-  position:absolute;
-  top:69px;
-  left:0;
-  width:100%;
-  background:var(--white);
-  flex-direction:column;
-  padding:20px 5%;
-  border-bottom:1px solid var(--border);
- }
+.navlinks{
+display:none;
+position:absolute;
+top:69px;
+left:0;
+width:100%;
+background:var(--w);
+flex-direction:column;
+padding:20px 5%;
+border-bottom:1px solid var(--b);
+}
 
- .navlinks.open{display:flex}
+.navlinks.open{
+display:flex;
+}
 
- .menu{display:block}
+.menu{
+display:block;
+}
 
- .hero{padding:65px 0}
+.hero{
+padding:65px 0;
+}
 
- .hero-grid{
-  grid-template-columns:1fr;
-  text-align:center;
- }
+.hero-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
 
- .hero-text{margin:auto}
+.hero-text{
+margin:auto;
+}
 
- .buttons{justify-content:center}
+.buttons{
+justify-content:center;
+}
 
- .cards{
-  grid-template-columns:1fr 1fr;
- }
+.cards{
+grid-template-columns:1fr 1fr;
+}
 
- .stats{
-  grid-template-columns:1fr 1fr;
- }
+.stats{
+grid-template-columns:1fr 1fr;
+}
 
- .social-grid{
-  grid-template-columns:1fr 1fr;
- }
+.social-grid{
+grid-template-columns:1fr 1fr;
+}
+
 }
 
 @media(max-width:550px){
 
- .hero h1{font-size:47px}
-
- .profile img{
-  width:165px;
-  height:165px;
- }
-
- .cards{
-  grid-template-columns:1fr;
- }
-
- .stats{
-  grid-template-columns:1fr 1fr;
- }
-
- .social-grid{
-  grid-template-columns:1fr;
- }
-
- .section-head h2,
- .cta h2{
-  font-size:30px;
- }
-
- section{padding:65px 0}
+.hero h1{
+font-size:47px;
 }
+
+.profile img{
+width:165px;
+height:165px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.social-grid{
+grid-template-columns:1fr;
+}
+
+.section-head h2,
+.cta h2{
+font-size:30px;
+}
+
+section{
+padding:65px 0;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
+<div id="progress"></div>
+
 <nav>
-<div class="logo">SUP_<span>GUYZ</span></div>
+
+<div class="logo">
+SUP_<span>GUYZ</span>
+</div>
 
 <ul class="navlinks" id="navlinks">
 <li><a href="#about">About</a></li>
@@ -664,16 +762,28 @@ footer p{
 </ul>
 
 <div class="nav-actions">
-<button class="theme" id="themeBtn" title="Change theme">☾</button>
-<button class="menu" id="menuBtn">☰</button>
+
+<button class="nav-btn" id="themeBtn">
+☾
+</button>
+
+<button class="nav-btn menu" id="menuBtn">
+☰
+</button>
+
 </div>
+
 </nav>
 
 <header class="hero">
+
 <div class="container hero-grid">
 
-<div>
-<div class="badge">STUDENT • LEADER • ENTREPRENEUR</div>
+<div class="reveal show">
+
+<div class="badge">
+STUDENT • LEADER • ENTREPRENEUR
+</div>
 
 <h1>
 Hakeem<br>
@@ -688,18 +798,32 @@ building projects around AI, digital media and online services.
 </p>
 
 <div class="buttons">
-<a href="#about" class="btn primary">Explore My Story</a>
-<a href="#projects" class="btn outline">View My Projects</a>
+
+<a href="#about" class="btn primary">
+Explore My Story
+</a>
+
+<a href="#projects" class="btn outline">
+View My Projects
+</a>
+
 </div>
+
 </div>
 
 <div class="profile">
-<img src="assets/hakeem-taofeek.png"
+
+<img
+src="assets/hakeem-taofeek.png"
 alt="Hakeem Taofeek Ayinde popularly known as SUP_GUYZ">
 
-<h2>Hakeem Taofeek Ayinde</h2>
+<h2>
+Hakeem Taofeek Ayinde
+</h2>
 
-<div class="alias">SUP_GUYZ</div>
+<div class="alias">
+SUP_GUYZ
+</div>
 
 <p>
 SUG Assistant General Secretary<br>
@@ -711,11 +835,12 @@ Federal College of Animal Health and Production Technology
 <span class="dot"></span>
 Building • Learning • Creating
 </div>
+
 </div>
 
 </div>
+
 </header>
-
 <section id="about" class="about">
 <div class="container reveal">
 
@@ -725,6 +850,7 @@ Building • Learning • Creating
 </div>
 
 <div class="about-content">
+
 <p>
 I am <strong>Hakeem Taofeek Ayinde</strong>, popularly known as
 <strong>SUP_GUYZ</strong>. I am a student, student leader,
@@ -737,9 +863,11 @@ technology, entrepreneurship and practical digital services.
 I enjoy turning ideas into useful projects while developing
 my skills and contributing to my community.
 </p>
+
 </div>
 
 <div class="stats">
+
 <div class="stat">
 <strong>SUP</strong>
 <span>Popular Brand</span>
@@ -759,264 +887,545 @@ my skills and contributing to my community.
 <strong>2+</strong>
 <span>Digital Projects</span>
 </div>
+
 </div>
 
 </div>
 </section>
+
 
 <section id="skills" class="skills">
 <div class="container reveal">
 
 <div class="section-head">
 <h2>Skills & Interests</h2>
-<p>Areas I am learning, building and exploring.</p>
+<p>Explore the areas I am learning and building.</p>
 </div>
+
+<div class="tabs">
+
+<button class="tab active" data-tab="tech">
+Technology
+</button>
+
+<button class="tab" data-tab="media">
+Media
+</button>
+
+<button class="tab" data-tab="business">
+Entrepreneurship
+</button>
+
+</div>
+
+
+<div id="tech" class="tab-content active">
 
 <div class="cards">
 
 <div class="card">
+
 <div class="icon">🤖</div>
+
 <h3>Artificial Intelligence</h3>
+
 <p>
-Exploring AI tools, AI content creation and practical uses of
-artificial intelligence.
+Exploring AI tools, AI content creation and practical uses
+of artificial intelligence.
 </p>
+
 </div>
 
+
 <div class="card">
+
 <div class="icon">💻</div>
-<h3>Technology</h3>
+
+<h3>Web & Technology</h3>
+
 <p>
-Interested in websites, digital platforms, online services and
+Interested in websites, digital platforms and
 technology-driven solutions.
 </p>
+
 </div>
+
 
 <div class="card">
-<div class="icon">🎬</div>
-<h3>Digital Media</h3>
+
+<div class="icon">⚙️</div>
+
+<h3>Digital Tools</h3>
+
 <p>
-Creating technology and digital content for social media and
-online audiences.
+Learning and using modern digital tools to turn ideas
+into useful projects.
 </p>
+
 </div>
 
 </div>
+
+</div>
+
+
+<div id="media" class="tab-content">
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">🎬</div>
+
+<h3>Content Creation</h3>
+
+<p>
+Creating technology and AI-focused content for online
+audiences.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📱</div>
+
+<h3>Social Media</h3>
+
+<p>
+Building digital presence and sharing useful technology
+content.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎨</div>
+
+<h3>Digital Media</h3>
+
+<p>
+Exploring creative digital media and visual communication.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div id="business" class="tab-content">
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">🚀</div>
+
+<h3>Entrepreneurship</h3>
+
+<p>
+Building practical digital projects and learning how
+online businesses grow.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📈</div>
+
+<h3>Digital Services</h3>
+
+<p>
+Interested in useful digital services that solve
+everyday problems.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💡</div>
+
+<h3>Ideas to Projects</h3>
+
+<p>
+Turning ideas into real digital platforms and experiences.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 
 <div style="max-width:800px;margin:40px auto 0">
 
 <div class="skill">
+
 <div class="skill-top">
-<span>Digital Media</span><span>85%</span>
-</div>
-<div class="bar"><span data-width="85%"></span></div>
+<span>Digital Media</span>
+<span>85%</span>
 </div>
 
-<div class="skill">
-<div class="skill-top">
-<span>Technology</span><span>80%</span>
-</div>
-<div class="bar"><span data-width="80%"></span></div>
+<div class="bar">
+<span data-width="85%"></span>
 </div>
 
-<div class="skill">
-<div class="skill-top">
-<span>AI & Content Creation</span><span>85%</span>
 </div>
-<div class="bar"><span data-width="85%"></span></div>
+
+
+<div class="skill">
+
+<div class="skill-top">
+<span>Technology</span>
+<span>80%</span>
+</div>
+
+<div class="bar">
+<span data-width="80%"></span>
+</div>
+
+</div>
+
+
+<div class="skill">
+
+<div class="skill-top">
+<span>AI & Content Creation</span>
+<span>85%</span>
+</div>
+
+<div class="bar">
+<span data-width="85%"></span>
+</div>
+
 </div>
 
 </div>
 
 </div>
 </section>
+
 
 <section id="leadership">
 <div class="container reveal">
 
 <div class="section-head">
+
 <h2>Leadership Journey</h2>
-<p>Service, communication and representation.</p>
+
+<p>
+Service, communication and representation.
+</p>
+
 </div>
+
 
 <div class="timeline">
 
+
 <div class="timeline-item">
+
 <small>STUDENT LEADERSHIP</small>
+
 <h3>SUG Assistant General Secretary</h3>
+
 <p>
 Serving students through communication, organisation,
 representation and support within the Students' Union Government.
 </p>
+
 </div>
 
+
 <div class="timeline-item">
+
 <small>PUBLIC RELATIONS</small>
+
 <h3>MSSN PRO</h3>
+
 <p>
 Supporting communication, information sharing and engagement
 within the student community.
 </p>
+
 </div>
 
+
 <div class="timeline-item">
+
 <small>COMMUNITY</small>
+
 <h3>Student Advocate</h3>
+
 <p>
 Committed to listening to students and contributing positive
 ideas to the student community.
 </p>
-</div>
 
 </div>
+
+
+</div>
+
 </div>
 </section>
 
+
 <section id="projects" class="projects">
+
 <div class="container reveal">
 
 <div class="section-head">
+
 <h2>My Projects</h2>
-<p>Digital platforms and brands I am building.</p>
+
+<p>
+Digital platforms and brands I am building.
+</p>
+
 </div>
+
 
 <div class="cards">
 
+
 <div class="card project-card featured">
-<div class="project-tag">DIGITAL SERVICES</div>
-<h3>Netpay</h3>
+
+<span class="tag">
+DIGITAL SERVICES
+</span>
+
+<h3 style="margin-top:15px">
+Netpay
+</h3>
+
 <p>
 A Nigerian digital services platform for supported services
 including data, airtime and other digital transactions.
 </p>
 
-<a href="https://netpay.com.ng/"
+<a
+href="https://netpay.com.ng/"
 target="_blank"
 rel="noopener"
 class="btn primary"
 style="margin-top:20px">
+
 Visit Netpay →
+
 </a>
+
 </div>
 
+
 <div class="card project-card">
-<div class="project-tag">MEDIA & TECHNOLOGY</div>
-<h3>Tao Media Academy</h3>
+
+<span class="tag">
+MEDIA & TECHNOLOGY
+</span>
+
+<h3 style="margin-top:15px">
+Tao Media Academy
+</h3>
+
 <p>
 A platform focused on digital media, technology, AI content
 creation and digital skills.
 </p>
+
 </div>
 
+
 <div class="card project-card">
-<div class="project-tag">CONTENT</div>
-<h3>SUP_GUYZ</h3>
+
+<span class="tag">
+PERSONAL BRAND
+</span>
+
+<h3 style="margin-top:15px">
+SUP_GUYZ
+</h3>
+
 <p>
 My personal digital brand for technology, AI, digital media,
 entrepreneurship and online content.
 </p>
+
 </div>
+
 
 </div>
 
 </div>
+
 </section>
 
+
 <section class="netpay">
+
 <div class="container reveal">
 
 <div class="section-head">
+
 <h2>Netpay</h2>
+
 <p>
 Digital services for everyday Nigerian users.
 </p>
+
 </div>
+
 
 <div class="cards">
 
-<div class="card">
-<div class="icon">📶</div>
-<h3>Data</h3>
-<p>
-A convenient platform for accessing supported mobile data
-services.
-</p>
-</div>
 
 <div class="card">
+
+<div class="icon">📶</div>
+
+<h3>Data</h3>
+
+<p>
+A convenient platform for accessing supported mobile
+data services.
+</p>
+
+</div>
+
+
+<div class="card">
+
 <div class="icon">📱</div>
+
 <h3>Airtime</h3>
+
 <p>
 Supported airtime services through a simple digital platform.
 </p>
+
 </div>
 
+
 <div class="card">
+
 <div class="icon">⚡</div>
+
 <h3>Digital Services</h3>
+
 <p>
 A growing platform focused on useful digital services in Nigeria.
 </p>
-</div>
 
 </div>
+
+
+</div>
+
 
 <div style="text-align:center;margin-top:35px">
-<a href="https://netpay.com.ng/"
+
+<a
+href="https://netpay.com.ng/"
 target="_blank"
 rel="noopener"
 class="btn">
+
 Visit Netpay →
+
 </a>
+
 </div>
 
 </div>
+
 </section>
-
 <section id="social">
 <div class="container reveal">
 
 <div class="section-head">
+
 <h2>Connect With Me</h2>
-<p>Follow SUP_GUYZ and Tao Media Academy online.</p>
+
+<p>
+Follow SUP_GUYZ and Tao Media Academy online.
+</p>
+
 </div>
+
 
 <div class="social-grid">
 
-<a class="social-card"
+
+<a
+class="social-card"
 href="https://www.facebook.com/profile.php?id=61594599100468"
-target="_blank" rel="noopener">
+target="_blank"
+rel="noopener">
+
 <div class="social-icon">f</div>
+
 Facebook
+
 </a>
 
-<a class="social-card"
+
+<a
+class="social-card"
 href="https://www.instagram.com/taomediaacademy1/"
-target="_blank" rel="noopener">
+target="_blank"
+rel="noopener">
+
 <div class="social-icon">◎</div>
+
 Instagram
+
 </a>
 
-<a class="social-card"
+
+<a
+class="social-card"
 href="https://www.tiktok.com/@sup_guyz001"
-target="_blank" rel="noopener">
+target="_blank"
+rel="noopener">
+
 <div class="social-icon">♪</div>
+
 TikTok
+
 </a>
 
-<a class="social-card"
+
+<a
+class="social-card"
 href="https://x.com/Taomediaacademy"
-target="_blank" rel="noopener">
+target="_blank"
+rel="noopener">
+
 <div class="social-icon">𝕏</div>
+
 X / Twitter
+
 </a>
+
 
 </div>
 
 </div>
 </section>
 
+
 <section class="cta">
+
 <div class="container reveal">
 
 <h2>Let's Build Something Great</h2>
@@ -1025,75 +1434,248 @@ X / Twitter
 Technology • Leadership • AI • Digital Entrepreneurship
 </p>
 
-<a href="https://www.instagram.com/taomediaacademy1/"
+<a
+href="https://www.instagram.com/taomediaacademy1/"
 target="_blank"
 rel="noopener"
 class="btn primary">
+
 Connect With Me
+
 </a>
 
 </div>
+
 </section>
 
+
 <footer>
+
 <div class="container">
+
 <p>
-© 2026 Hakeem Taofeek Ayinde (SUP_GUYZ). All rights reserved.
+© <span id="year"></span>
+Hakeem Taofeek Ayinde (SUP_GUYZ).
+All rights reserved.
 </p>
 
 <p style="margin-top:7px">
 Tao Media Academy • Netpay • Digital Entrepreneur
 </p>
+
 </div>
+
 </footer>
 
-<button class="top" id="topBtn">↑</button>
+
+<button
+class="top"
+id="topBtn"
+aria-label="Back to top">
+
+↑
+
+</button>
+
+
+<div class="toast" id="toast"></div>
+
 
 <script>
-const menuBtn=document.getElementById("menuBtn");
-const navlinks=document.getElementById("navlinks");
-const themeBtn=document.getElementById("themeBtn");
-const topBtn=document.getElementById("topBtn");
 
-menuBtn.onclick=()=>{
- navlinks.classList.toggle("open");
- menuBtn.textContent=navlinks.classList.contains("open")?"✕":"☰";
+const $ = s => document.querySelector(s);
+
+const $$ = s => document.querySelectorAll(s);
+
+
+const menu = $("#menuBtn");
+
+const nav = $("#navlinks");
+
+const theme = $("#themeBtn");
+
+const top = $("#topBtn");
+
+const toast = $("#toast");
+
+
+menu.onclick = () => {
+
+    nav.classList.toggle("open");
+
+    menu.textContent =
+        nav.classList.contains("open")
+        ? "✕"
+        : "☰";
+
 };
 
-document.querySelectorAll(".navlinks a").forEach(link=>{
- link.onclick=()=>{
-  navlinks.classList.remove("open");
-  menuBtn.textContent="☰";
- };
+
+$$(".navlinks a").forEach(a => {
+
+    a.onclick = () => {
+
+        nav.classList.remove("open");
+
+        menu.textContent = "☰";
+
+    };
+
 });
 
-themeBtn.onclick=()=>{
- document.body.classList.toggle("dark");
- themeBtn.textContent=document.body.classList.contains("dark")?"☀":"☾";
+
+theme.onclick = () => {
+
+    document.body.classList.toggle("dark");
+
+    theme.textContent =
+        document.body.classList.contains("dark")
+        ? "☀"
+        : "☾";
+
+
+    localStorage.setItem(
+        "theme",
+        document.body.classList.contains("dark")
+        ? "dark"
+        : "light"
+    );
+
+
+    showToast(
+        document.body.classList.contains("dark")
+        ? "Dark mode enabled"
+        : "Light mode enabled"
+    );
+
 };
 
-window.addEventListener("scroll",()=>{
- topBtn.style.display=window.scrollY>500?"block":"none";
+
+if(localStorage.getItem("theme") === "dark") {
+
+    document.body.classList.add("dark");
+
+    theme.textContent = "☀";
+
+}
+
+
+$$(".tab").forEach(button => {
+
+    button.onclick = () => {
+
+        $$(".tab").forEach(x =>
+            x.classList.remove("active")
+        );
+
+
+        $$(".tab-content").forEach(x =>
+            x.classList.remove("active")
+        );
+
+
+        button.classList.add("active");
+
+
+        $("#" + button.dataset.tab)
+        .classList.add("active");
+
+    };
+
 });
 
-topBtn.onclick=()=>{
- window.scrollTo({top:0,behavior:"smooth"});
+
+const observer = new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+
+                entry.target
+                .querySelectorAll(".bar span")
+                .forEach(bar => {
+
+                    bar.style.width =
+                        bar.dataset.width;
+
+                });
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: .15
+    }
+
+);
+
+
+$$(".reveal").forEach(element =>
+    observer.observe(element)
+);
+
+
+addEventListener("scroll", () => {
+
+    let h = document.documentElement;
+
+
+    $("#progress").style.width =
+        (h.scrollTop /
+        (h.scrollHeight - h.clientHeight) * 100)
+        + "%";
+
+
+    top.style.display =
+        scrollY > 500
+        ? "block"
+        : "none";
+
+});
+
+
+top.onclick = () => {
+
+    scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
 };
 
-const observer=new IntersectionObserver(entries=>{
- entries.forEach(entry=>{
-  if(entry.isIntersecting){
-   entry.target.classList.add("show");
 
-   entry.target.querySelectorAll(".bar span").forEach(bar=>{
-    bar.style.width=bar.dataset.width;
-   });
-  }
- });
-},{threshold:.15});
+function showToast(text) {
 
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+    toast.textContent = text;
+
+    toast.classList.add("show");
+
+
+    setTimeout(() => {
+
+        toast.classList.remove("show");
+
+    }, 1800);
+
+}
+
+
+$("#year").textContent =
+    new Date().getFullYear();
+
 </script>
 
+
 </body>
-  </html>
+</html>
