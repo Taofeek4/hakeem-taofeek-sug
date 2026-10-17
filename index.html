@@ -6,14 +6,15 @@
 
 <meta name="google-site-verification" content="IPFIKmFvtoQdLbRA_IsdgafdKXvmxO_IPjUXM6lC2Ks">
 
-<title>Hakeem Taofeek Ayinde (SUP_GUYZ) | SUG Leader & Digital Entrepreneur</title>
+<title>Hakeem Taofeek Ayinde (SUP_GUYZ) | Digital Entrepreneur</title>
 
-<meta name="description" content="Official website of Hakeem Taofeek Ayinde, popularly known as SUP_GUYZ. Student leader, SUG Assistant General Secretary, MSSN PRO, technology enthusiast and digital entrepreneur.">
+<meta name="description" content="Official website of Hakeem Taofeek Ayinde, popularly known as SUP_GUYZ — student leader, digital entrepreneur, technology enthusiast, founder of Tao Media Academy and Netpay.">
 
 <meta name="keywords" content="Hakeem Taofeek Ayinde, SUP_GUYZ, Sup Guyz, Tao Media Academy, Netpay, cheap data, cheap data website, buy data online Nigeria, airtime website, VTU website, digital services Nigeria, SUG Assistant General Secretary, MSSN PRO">
 
 <meta name="author" content="Hakeem Taofeek Ayinde">
 <meta name="robots" content="index, follow">
+
 <link rel="canonical" href="https://taofeek4.github.io/hakeem-taofeek-sug/">
 
 <meta property="og:type" content="profile">
@@ -23,33 +24,35 @@
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"Hakeem Taofeek Ayinde",
-  "alternateName":"SUP_GUYZ",
-  "url":"https://taofeek4.github.io/hakeem-taofeek-sug/",
-  "description":"Student leader, digital entrepreneur and technology enthusiast.",
-  "jobTitle":["SUG Assistant General Secretary","MSSN PRO"],
-  "sameAs":[
-    "https://www.facebook.com/profile.php?id=61594599100468",
-    "https://www.instagram.com/taomediaacademy1/",
-    "https://www.tiktok.com/@sup_guyz001",
-    "https://x.com/Taomediaacademy",
-    "https://netpay.com.ng/"
-  ]
+ "@context":"https://schema.org",
+ "@type":"Person",
+ "name":"Hakeem Taofeek Ayinde",
+ "alternateName":"SUP_GUYZ",
+ "url":"https://taofeek4.github.io/hakeem-taofeek-sug/",
+ "description":"Student leader, digital entrepreneur and technology enthusiast.",
+ "jobTitle":["SUG Assistant General Secretary","MSSN PRO"],
+ "sameAs":[
+  "https://www.facebook.com/profile.php?id=61594599100468",
+  "https://www.instagram.com/taomediaacademy1/",
+  "https://www.tiktok.com/@sup_guyz001",
+  "https://x.com/Taomediaacademy",
+  "https://netpay.com.ng/"
+ ]
 }
 </script>
 
 <style>
 :root{
---green:#087f3f;
---dark:#05632f;
---light:#eaf7ef;
---lighter:#f4fbf6;
---white:#fff;
---text:#17221b;
---muted:#657168;
---border:#dce9df;
+ --green:#087f3f;
+ --dark:#05632f;
+ --deep:#06351d;
+ --light:#eaf7ef;
+ --lighter:#f4fbf6;
+ --white:#fff;
+ --text:#17221b;
+ --muted:#657168;
+ --border:#dce9df;
+ --shadow:0 15px 45px rgba(0,0,0,.08);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -57,312 +60,592 @@
 html{scroll-behavior:smooth}
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:var(--lighter);
-color:var(--text);
-line-height:1.7;
+ font-family:Arial,Helvetica,sans-serif;
+ background:var(--lighter);
+ color:var(--text);
+ line-height:1.7;
+ overflow-x:hidden;
+ transition:.3s;
+}
+
+body.dark{
+ --lighter:#0c1510;
+ --white:#111c15;
+ --text:#f1f7f3;
+ --muted:#a9b9ae;
+ --border:#26392d;
+ --light:#15291d;
+ --deep:#020d07;
 }
 
 a{text-decoration:none;color:inherit}
 
-nav{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(255,255,255,.97);
-border-bottom:1px solid var(--border);
-padding:15px 6%;
-display:flex;
-justify-content:space-between;
-align-items:center;
+.container{
+ width:min(1120px,90%);
+ margin:auto;
 }
 
+nav{
+ position:sticky;
+ top:0;
+ z-index:999;
+ background:rgba(255,255,255,.94);
+ backdrop-filter:blur(15px);
+ border-bottom:1px solid var(--border);
+ padding:14px 5%;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+}
+
+body.dark nav{background:rgba(17,28,21,.94)}
+
 .logo{
-font-size:22px;
-font-weight:800;
-color:var(--green);
+ font-size:23px;
+ font-weight:900;
+ color:var(--green);
 }
 
 .logo span{color:var(--text)}
 
 .navlinks{
-display:flex;
-gap:20px;
-list-style:none;
+ display:flex;
+ gap:22px;
+ list-style:none;
 }
 
 .navlinks a{
-font-weight:600;
-font-size:14px;
+ font-size:14px;
+ font-weight:700;
 }
 
 .navlinks a:hover{color:var(--green)}
 
-.hero{
-background:linear-gradient(135deg,#eaf7ef,#fff);
-padding:80px 6%;
+.nav-actions{
+ display:flex;
+ align-items:center;
+ gap:10px;
 }
 
-.hero-container{
-max-width:1100px;
-margin:auto;
-display:grid;
-grid-template-columns:1.5fr 1fr;
-gap:50px;
-align-items:center;
+.theme,.menu{
+ border:1px solid var(--border);
+ background:var(--white);
+ color:var(--text);
+ width:40px;
+ height:40px;
+ border-radius:9px;
+ cursor:pointer;
+ font-size:17px;
+}
+
+.menu{display:none}
+
+.hero{
+ position:relative;
+ padding:90px 0;
+ overflow:hidden;
+ background:
+ radial-gradient(circle at 85% 20%,#ccefd9,transparent 25%),
+ linear-gradient(135deg,#eaf7ef,#fff);
+}
+
+body.dark .hero{
+ background:
+ radial-gradient(circle at 85% 20%,#163b25,transparent 25%),
+ linear-gradient(135deg,#0d1c13,#0c1510);
+}
+
+.hero-grid{
+ display:grid;
+ grid-template-columns:1.4fr .8fr;
+ gap:60px;
+ align-items:center;
 }
 
 .badge{
-display:inline-block;
-background:var(--light);
-color:var(--green);
-padding:7px 14px;
-border-radius:30px;
-font-weight:700;
-font-size:13px;
-margin-bottom:15px;
+ display:inline-block;
+ padding:7px 15px;
+ border-radius:30px;
+ background:var(--light);
+ color:var(--green);
+ font-size:13px;
+ font-weight:800;
+ margin-bottom:18px;
+ animation:fadeUp .8s ease;
 }
 
-h1{
-font-size:clamp(42px,7vw,72px);
-line-height:1.05;
-margin-bottom:20px;
+.hero h1{
+ font-size:clamp(45px,7vw,78px);
+ line-height:1;
+ margin-bottom:22px;
+ animation:fadeUp 1s ease;
 }
 
-h1 span{color:var(--green)}
+.hero h1 span{color:var(--green)}
 
-.hero p{
-font-size:18px;
-color:var(--muted);
-max-width:650px;
+.hero-text{
+ max-width:650px;
+ color:var(--muted);
+ font-size:18px;
+ animation:fadeUp 1.2s ease;
 }
 
 .buttons{
-display:flex;
-gap:12px;
-flex-wrap:wrap;
-margin-top:28px;
+ display:flex;
+ gap:12px;
+ flex-wrap:wrap;
+ margin-top:28px;
 }
 
 .btn{
-padding:13px 22px;
-border-radius:8px;
-font-weight:700;
-display:inline-block;
+ display:inline-block;
+ padding:13px 22px;
+ border-radius:9px;
+ font-weight:800;
+ transition:.25s;
 }
 
 .primary{
-background:var(--green);
-color:white;
+ background:var(--green);
+ color:white;
 }
 
-.primary:hover{background:var(--dark)}
+.primary:hover{
+ background:var(--dark);
+ transform:translateY(-3px);
+}
 
 .outline{
-border:2px solid var(--green);
-color:var(--green);
+ border:2px solid var(--green);
+ color:var(--green);
+}
+
+.outline:hover{
+ background:var(--green);
+ color:white;
 }
 
 .profile{
-background:white;
-padding:30px;
-border-radius:18px;
-text-align:center;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
+ background:var(--white);
+ padding:30px;
+ border-radius:22px;
+ text-align:center;
+ box-shadow:var(--shadow);
+ border:1px solid var(--border);
+ animation:float 4s ease-in-out infinite;
 }
 
 .profile img{
-width:190px;
-height:190px;
-object-fit:cover;
-border-radius:50%;
-border:6px solid var(--light);
-margin-bottom:18px;
+ width:205px;
+ height:205px;
+ object-fit:cover;
+ border-radius:50%;
+ border:7px solid var(--light);
 }
 
-.profile h2{font-size:24px}
+.profile h2{
+ margin-top:15px;
+ font-size:25px;
+}
 
 .alias{
-color:var(--green);
-font-weight:800;
-font-size:18px;
+ color:var(--green);
+ font-weight:900;
+ font-size:19px;
 }
 
 .profile p{
-font-size:14px;
-margin-top:8px;
+ color:var(--muted);
+ font-size:14px;
+ margin-top:7px;
 }
 
-section{
-padding:70px 6%;
+.status{
+ display:inline-flex;
+ align-items:center;
+ gap:7px;
+ margin-top:15px;
+ font-size:13px;
+ color:var(--green);
+ font-weight:700;
 }
 
-.container{
-max-width:1100px;
-margin:auto;
+.dot{
+ width:9px;
+ height:9px;
+ background:#18a957;
+ border-radius:50%;
+ box-shadow:0 0 0 5px #18a95722;
 }
 
-.section-title{
-text-align:center;
-margin-bottom:40px;
+section{padding:85px 0}
+
+.section-head{
+ text-align:center;
+ margin-bottom:45px;
 }
 
-.section-title h2{
-font-size:35px;
-margin-bottom:8px;
+.section-head h2{
+ font-size:38px;
+ line-height:1.2;
+ margin-bottom:8px;
 }
 
-.section-title p{color:var(--muted)}
+.section-head p{color:var(--muted)}
 
-.grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:22px;
+.about{
+ background:var(--white);
+}
+
+.about-content{
+ max-width:850px;
+ margin:auto;
+ text-align:center;
+ font-size:17px;
+ color:var(--muted);
+}
+
+.about-content strong{color:var(--text)}
+
+.stats{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:15px;
+ margin-top:40px;
+}
+
+.stat{
+ background:var(--light);
+ padding:25px 15px;
+ border-radius:15px;
+ text-align:center;
+}
+
+.stat strong{
+ display:block;
+ color:var(--green);
+ font-size:30px;
+}
+
+.stat span{
+ color:var(--muted);
+ font-size:13px;
+}
+
+.cards{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:22px;
 }
 
 .card{
-background:white;
-padding:28px;
-border-radius:14px;
-border:1px solid var(--border);
+ background:var(--white);
+ border:1px solid var(--border);
+ padding:28px;
+ border-radius:17px;
+ box-shadow:0 8px 25px rgba(0,0,0,.04);
+ transition:.3s;
+}
+
+.card:hover{
+ transform:translateY(-7px);
+ box-shadow:var(--shadow);
+ border-color:#9bd2ad;
+}
+
+.icon{
+ width:50px;
+ height:50px;
+ border-radius:12px;
+ display:grid;
+ place-items:center;
+ background:var(--light);
+ color:var(--green);
+ font-size:23px;
+ margin-bottom:18px;
 }
 
 .card h3{
-color:var(--green);
-margin-bottom:10px;
+ margin-bottom:9px;
+ color:var(--green);
 }
 
 .card p{color:var(--muted)}
 
-.about{
-background:white;
+.skills{
+ background:var(--light);
 }
 
-.about-box{
-max-width:850px;
-margin:auto;
-text-align:center;
-font-size:17px;
+.skill{
+ margin-bottom:20px;
 }
 
-.stats{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:15px;
-margin-top:30px;
+.skill-top{
+ display:flex;
+ justify-content:space-between;
+ font-weight:700;
+ margin-bottom:7px;
 }
 
-.stat{
-background:var(--light);
-padding:25px;
-text-align:center;
-border-radius:12px;
+.bar{
+ height:9px;
+ background:var(--border);
+ border-radius:20px;
+ overflow:hidden;
 }
 
-.stat strong{
-display:block;
-font-size:28px;
-color:var(--green);
+.bar span{
+ display:block;
+ height:100%;
+ width:0;
+ background:var(--green);
+ border-radius:20px;
+ transition:1.5s ease;
 }
 
-.stat span{
-font-size:14px;
-color:var(--muted);
+.timeline{
+ max-width:850px;
+ margin:auto;
+ border-left:3px solid var(--green);
+ padding-left:30px;
+}
+
+.timeline-item{
+ position:relative;
+ background:var(--white);
+ border:1px solid var(--border);
+ padding:23px;
+ border-radius:13px;
+ margin-bottom:20px;
+}
+
+.timeline-item:before{
+ content:"";
+ position:absolute;
+ width:13px;
+ height:13px;
+ background:var(--green);
+ border-radius:50%;
+ left:-38px;
+ top:28px;
+ border:4px solid var(--lighter);
+}
+
+.timeline-item small{
+ color:var(--green);
+ font-weight:800;
+}
+
+.timeline-item h3{margin:5px 0}
+
+.timeline-item p{color:var(--muted)}
+
+.projects{
+ background:var(--white);
+}
+
+.project-card{
+ position:relative;
+ overflow:hidden;
+}
+
+.project-card.featured{
+ border:2px solid var(--green);
+}
+
+.project-tag{
+ display:inline-block;
+ background:var(--light);
+ color:var(--green);
+ padding:5px 10px;
+ border-radius:20px;
+ font-size:11px;
+ font-weight:800;
+ margin-bottom:15px;
 }
 
 .netpay{
-background:var(--green);
-color:white;
+ background:linear-gradient(135deg,var(--green),var(--dark));
+ color:white;
 }
 
-.netpay .section-title p,
-.netpay .card p{color:#e4f5ea}
+.netpay .section-head p{color:#dcefe3}
 
 .netpay .card{
-background:var(--dark);
-border-color:#39885b;
+ background:#075b2d;
+ border-color:#39885b;
 }
 
-.netpay h2,
-.netpay h3{color:white}
+.netpay .card h3{color:white}
 
-.social{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
+.netpay .card p{color:#dcefe3}
+
+.netpay .btn{
+ background:white;
+ color:var(--green);
+ margin-top:18px;
 }
 
-.social a{
-background:white;
-border:1px solid var(--border);
-padding:13px 20px;
-border-radius:8px;
-font-weight:700;
-color:var(--green);
+.social-grid{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:15px;
 }
 
-.social a:hover{
-background:var(--green);
-color:white;
+.social-card{
+ background:var(--white);
+ border:1px solid var(--border);
+ border-radius:14px;
+ padding:22px;
+ text-align:center;
+ font-weight:800;
+ transition:.25s;
+}
+
+.social-card:hover{
+ transform:translateY(-5px);
+ color:var(--green);
+ border-color:var(--green);
+}
+
+.social-icon{
+ font-size:27px;
+ margin-bottom:8px;
 }
 
 .cta{
-background:var(--light);
-text-align:center;
+ background:var(--light);
+ text-align:center;
+}
+
+.cta h2{
+ font-size:38px;
+ margin-bottom:10px;
+}
+
+.cta p{
+ color:var(--muted);
+ margin-bottom:25px;
 }
 
 footer{
-background:#06351d;
-color:white;
-text-align:center;
-padding:30px 6%;
+ background:var(--deep);
+ color:white;
+ padding:35px 0;
+ text-align:center;
 }
 
 footer p{
-font-size:14px;
-color:#d6eadc;
+ color:#c8ded0;
+ font-size:13px;
 }
 
-@media(max-width:800px){
-nav{padding:13px 5%}
-.navlinks{display:none}
-
-.hero{padding:55px 5%}
-
-.hero-container{
-grid-template-columns:1fr;
-text-align:center;
+.top{
+ position:fixed;
+ right:20px;
+ bottom:20px;
+ width:45px;
+ height:45px;
+ border:0;
+ border-radius:50%;
+ background:var(--green);
+ color:white;
+ cursor:pointer;
+ font-size:18px;
+ display:none;
+ box-shadow:var(--shadow);
 }
 
-.hero p{margin:auto}
-
-.buttons{justify-content:center}
-
-.grid{
-grid-template-columns:1fr;
+.reveal{
+ opacity:0;
+ transform:translateY(30px);
+ transition:opacity .7s,transform .7s;
 }
 
-.stats{
-grid-template-columns:repeat(2,1fr);
+.reveal.show{
+ opacity:1;
+ transform:translateY(0);
 }
 
-section{padding:55px 5%}
+@keyframes fadeUp{
+ from{opacity:0;transform:translateY(25px)}
+ to{opacity:1;transform:translateY(0)}
 }
 
-@media(max-width:450px){
-h1{font-size:43px}
-
-.profile img{
-width:150px;
-height:150px;
+@keyframes float{
+ 0%,100%{transform:translateY(0)}
+ 50%{transform:translateY(-8px)}
 }
 
-.stats{
-grid-template-columns:1fr 1fr;
+@media(max-width:850px){
+
+ .navlinks{
+  display:none;
+  position:absolute;
+  top:69px;
+  left:0;
+  width:100%;
+  background:var(--white);
+  flex-direction:column;
+  padding:20px 5%;
+  border-bottom:1px solid var(--border);
+ }
+
+ .navlinks.open{display:flex}
+
+ .menu{display:block}
+
+ .hero{padding:65px 0}
+
+ .hero-grid{
+  grid-template-columns:1fr;
+  text-align:center;
+ }
+
+ .hero-text{margin:auto}
+
+ .buttons{justify-content:center}
+
+ .cards{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .stats{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .social-grid{
+  grid-template-columns:1fr 1fr;
+ }
 }
 
-.stat strong{font-size:24px}
+@media(max-width:550px){
+
+ .hero h1{font-size:47px}
+
+ .profile img{
+  width:165px;
+  height:165px;
+ }
+
+ .cards{
+  grid-template-columns:1fr;
+ }
+
+ .stats{
+  grid-template-columns:1fr 1fr;
+ }
+
+ .social-grid{
+  grid-template-columns:1fr;
+ }
+
+ .section-head h2,
+ .cta h2{
+  font-size:30px;
+ }
+
+ section{padding:65px 0}
 }
 </style>
 </head>
@@ -372,16 +655,22 @@ grid-template-columns:1fr 1fr;
 <nav>
 <div class="logo">SUP_<span>GUYZ</span></div>
 
-<ul class="navlinks">
+<ul class="navlinks" id="navlinks">
 <li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
 <li><a href="#leadership">Leadership</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#social">Social</a></li>
 </ul>
+
+<div class="nav-actions">
+<button class="theme" id="themeBtn" title="Change theme">☾</button>
+<button class="menu" id="menuBtn">☰</button>
+</div>
 </nav>
 
 <header class="hero">
-<div class="hero-container">
+<div class="container hero-grid">
 
 <div>
 <div class="badge">STUDENT • LEADER • ENTREPRENEUR</div>
@@ -392,15 +681,15 @@ Hakeem<br>
 Ayinde
 </h1>
 
-<p>
+<p class="hero-text">
 Also known as <strong>SUP_GUYZ</strong>.
-Student leader, digital entrepreneur, technology enthusiast
-and founder of Tao Media Academy and Netpay.
+Student leader, digital entrepreneur and technology enthusiast
+building projects around AI, digital media and online services.
 </p>
 
 <div class="buttons">
-<a href="#about" class="btn primary">Explore Profile</a>
-<a href="#social" class="btn outline">Connect With Me</a>
+<a href="#about" class="btn primary">Explore My Story</a>
+<a href="#projects" class="btn outline">View My Projects</a>
 </div>
 </div>
 
@@ -417,39 +706,43 @@ SUG Assistant General Secretary<br>
 MSSN PRO<br>
 Federal College of Animal Health and Production Technology
 </p>
+
+<div class="status">
+<span class="dot"></span>
+Building • Learning • Creating
+</div>
 </div>
 
 </div>
 </header>
 
 <section id="about" class="about">
-<div class="container">
+<div class="container reveal">
 
-<div class="section-title">
+<div class="section-head">
 <h2>About Me</h2>
-<p>Who is Hakeem Taofeek?</p>
+<p>The person behind SUP_GUYZ</p>
 </div>
 
-<div class="about-box">
+<div class="about-content">
 <p>
 I am <strong>Hakeem Taofeek Ayinde</strong>, popularly known as
 <strong>SUP_GUYZ</strong>. I am a student, student leader,
-digital entrepreneur and technology enthusiast interested in
-technology, artificial intelligence, digital media and
-entrepreneurship.
+digital entrepreneur and technology enthusiast.
 </p>
 
-<p style="margin-top:15px">
-I am passionate about helping young people develop useful
-digital skills while building practical digital projects and
-services.
+<p style="margin-top:16px">
+My interests include artificial intelligence, digital content,
+technology, entrepreneurship and practical digital services.
+I enjoy turning ideas into useful projects while developing
+my skills and contributing to my community.
 </p>
 </div>
 
 <div class="stats">
 <div class="stat">
 <strong>SUP</strong>
-<span>Popular Name</span>
+<span>Popular Brand</span>
 </div>
 
 <div class="stat">
@@ -463,25 +756,93 @@ services.
 </div>
 
 <div class="stat">
-<strong>VTU</strong>
-<span>Digital Services</span>
+<strong>2+</strong>
+<span>Digital Projects</span>
 </div>
 </div>
 
 </div>
 </section>
 
-<section id="leadership">
-<div class="container">
+<section id="skills" class="skills">
+<div class="container reveal">
 
-<div class="section-title">
-<h2>Leadership</h2>
+<div class="section-head">
+<h2>Skills & Interests</h2>
+<p>Areas I am learning, building and exploring.</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">🤖</div>
+<h3>Artificial Intelligence</h3>
+<p>
+Exploring AI tools, AI content creation and practical uses of
+artificial intelligence.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💻</div>
+<h3>Technology</h3>
+<p>
+Interested in websites, digital platforms, online services and
+technology-driven solutions.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🎬</div>
+<h3>Digital Media</h3>
+<p>
+Creating technology and digital content for social media and
+online audiences.
+</p>
+</div>
+
+</div>
+
+<div style="max-width:800px;margin:40px auto 0">
+
+<div class="skill">
+<div class="skill-top">
+<span>Digital Media</span><span>85%</span>
+</div>
+<div class="bar"><span data-width="85%"></span></div>
+</div>
+
+<div class="skill">
+<div class="skill-top">
+<span>Technology</span><span>80%</span>
+</div>
+<div class="bar"><span data-width="80%"></span></div>
+</div>
+
+<div class="skill">
+<div class="skill-top">
+<span>AI & Content Creation</span><span>85%</span>
+</div>
+<div class="bar"><span data-width="85%"></span></div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="leadership">
+<div class="container reveal">
+
+<div class="section-head">
+<h2>Leadership Journey</h2>
 <p>Service, communication and representation.</p>
 </div>
 
-<div class="grid">
+<div class="timeline">
 
-<div class="card">
+<div class="timeline-item">
+<small>STUDENT LEADERSHIP</small>
 <h3>SUG Assistant General Secretary</h3>
 <p>
 Serving students through communication, organisation,
@@ -489,19 +850,21 @@ representation and support within the Students' Union Government.
 </p>
 </div>
 
-<div class="card">
+<div class="timeline-item">
+<small>PUBLIC RELATIONS</small>
 <h3>MSSN PRO</h3>
 <p>
-Public Relations role focused on communication, information
-sharing and connecting students with relevant activities.
+Supporting communication, information sharing and engagement
+within the student community.
 </p>
 </div>
 
-<div class="card">
+<div class="timeline-item">
+<small>COMMUNITY</small>
 <h3>Student Advocate</h3>
 <p>
-Committed to listening to students, supporting positive ideas
-and contributing to a better student community.
+Committed to listening to students and contributing positive
+ideas to the student community.
 </p>
 </div>
 
@@ -509,85 +872,90 @@ and contributing to a better student community.
 </div>
 </section>
 
-<section id="projects" class="about">
-<div class="container">
+<section id="projects" class="projects">
+<div class="container reveal">
 
-<div class="section-title">
+<div class="section-head">
 <h2>My Projects</h2>
-<p>Digital projects and platforms.</p>
+<p>Digital platforms and brands I am building.</p>
 </div>
 
-<div class="grid">
+<div class="cards">
 
-<div class="card">
+<div class="card project-card featured">
+<div class="project-tag">DIGITAL SERVICES</div>
 <h3>Netpay</h3>
 <p>
-Netpay is a Nigerian digital services platform designed for
-convenient digital services such as data, airtime and other
-supported services.
+A Nigerian digital services platform for supported services
+including data, airtime and other digital transactions.
 </p>
 
 <a href="https://netpay.com.ng/"
 target="_blank"
+rel="noopener"
 class="btn primary"
-style="margin-top:18px">
-Visit Netpay
+style="margin-top:20px">
+Visit Netpay →
 </a>
 </div>
 
-<div class="card">
+<div class="card project-card">
+<div class="project-tag">MEDIA & TECHNOLOGY</div>
 <h3>Tao Media Academy</h3>
 <p>
-A digital media and technology-focused platform built around
-AI content creation, digital skills and technology education.
+A platform focused on digital media, technology, AI content
+creation and digital skills.
 </p>
 </div>
 
-<div class="card">
-<h3>Digital Content</h3>
+<div class="card project-card">
+<div class="project-tag">CONTENT</div>
+<h3>SUP_GUYZ</h3>
 <p>
-Creating and sharing technology, artificial intelligence and
-digital media content across social platforms.
+My personal digital brand for technology, AI, digital media,
+entrepreneurship and online content.
 </p>
 </div>
 
 </div>
+
 </div>
 </section>
 
 <section class="netpay">
-<div class="container">
+<div class="container reveal">
 
-<div class="section-title">
-<h2>Netpay — Digital Services</h2>
+<div class="section-head">
+<h2>Netpay</h2>
 <p>
-A Nigerian platform for convenient digital services.
+Digital services for everyday Nigerian users.
 </p>
 </div>
 
-<div class="grid">
+<div class="cards">
 
 <div class="card">
-<h3>Buy Data Online</h3>
+<div class="icon">📶</div>
+<h3>Data</h3>
 <p>
-Access supported mobile data services through the Netpay
-digital platform.
+A convenient platform for accessing supported mobile data
+services.
 </p>
 </div>
 
 <div class="card">
+<div class="icon">📱</div>
 <h3>Airtime</h3>
 <p>
-A convenient platform for supported airtime and digital
-service transactions.
+Supported airtime services through a simple digital platform.
 </p>
 </div>
 
 <div class="card">
+<div class="icon">⚡</div>
 <h3>Digital Services</h3>
 <p>
-Netpay is being developed as a practical platform for
-digital services in Nigeria.
+A growing platform focused on useful digital services in Nigeria.
 </p>
 </div>
 
@@ -596,9 +964,9 @@ digital services in Nigeria.
 <div style="text-align:center;margin-top:35px">
 <a href="https://netpay.com.ng/"
 target="_blank"
-class="btn"
-style="background:white;color:#087f3f">
-Visit Netpay
+rel="noopener"
+class="btn">
+Visit Netpay →
 </a>
 </div>
 
@@ -606,32 +974,40 @@ Visit Netpay
 </section>
 
 <section id="social">
-<div class="container">
+<div class="container reveal">
 
-<div class="section-title">
+<div class="section-head">
 <h2>Connect With Me</h2>
-<p>Follow my work and digital journey.</p>
+<p>Follow SUP_GUYZ and Tao Media Academy online.</p>
 </div>
 
-<div class="social">
+<div class="social-grid">
 
-<a href="https://www.facebook.com/profile.php?id=61594599100468"
-target="_blank">
+<a class="social-card"
+href="https://www.facebook.com/profile.php?id=61594599100468"
+target="_blank" rel="noopener">
+<div class="social-icon">f</div>
 Facebook
 </a>
 
-<a href="https://www.instagram.com/taomediaacademy1/"
-target="_blank">
+<a class="social-card"
+href="https://www.instagram.com/taomediaacademy1/"
+target="_blank" rel="noopener">
+<div class="social-icon">◎</div>
 Instagram
 </a>
 
-<a href="https://www.tiktok.com/@sup_guyz001"
-target="_blank">
+<a class="social-card"
+href="https://www.tiktok.com/@sup_guyz001"
+target="_blank" rel="noopener">
+<div class="social-icon">♪</div>
 TikTok
 </a>
 
-<a href="https://x.com/Taomediaacademy"
-target="_blank">
+<a class="social-card"
+href="https://x.com/Taomediaacademy"
+target="_blank" rel="noopener">
+<div class="social-icon">𝕏</div>
 X / Twitter
 </a>
 
@@ -641,35 +1017,83 @@ X / Twitter
 </section>
 
 <section class="cta">
-<div class="container">
+<div class="container reveal">
 
-<div class="section-title">
 <h2>Let's Build Something Great</h2>
-<p>
-Technology, leadership and digital entrepreneurship.
-</p>
-</div>
 
-<div style="text-align:center">
+<p>
+Technology • Leadership • AI • Digital Entrepreneurship
+</p>
+
 <a href="https://www.instagram.com/taomediaacademy1/"
 target="_blank"
+rel="noopener"
 class="btn primary">
 Connect With Me
 </a>
-</div>
 
 </div>
 </section>
 
 <footer>
+<div class="container">
 <p>
 © 2026 Hakeem Taofeek Ayinde (SUP_GUYZ). All rights reserved.
 </p>
 
-<p style="margin-top:5px">
+<p style="margin-top:7px">
 Tao Media Academy • Netpay • Digital Entrepreneur
 </p>
+</div>
 </footer>
 
+<button class="top" id="topBtn">↑</button>
+
+<script>
+const menuBtn=document.getElementById("menuBtn");
+const navlinks=document.getElementById("navlinks");
+const themeBtn=document.getElementById("themeBtn");
+const topBtn=document.getElementById("topBtn");
+
+menuBtn.onclick=()=>{
+ navlinks.classList.toggle("open");
+ menuBtn.textContent=navlinks.classList.contains("open")?"✕":"☰";
+};
+
+document.querySelectorAll(".navlinks a").forEach(link=>{
+ link.onclick=()=>{
+  navlinks.classList.remove("open");
+  menuBtn.textContent="☰";
+ };
+});
+
+themeBtn.onclick=()=>{
+ document.body.classList.toggle("dark");
+ themeBtn.textContent=document.body.classList.contains("dark")?"☀":"☾";
+};
+
+window.addEventListener("scroll",()=>{
+ topBtn.style.display=window.scrollY>500?"block":"none";
+});
+
+topBtn.onclick=()=>{
+ window.scrollTo({top:0,behavior:"smooth"});
+};
+
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{
+  if(entry.isIntersecting){
+   entry.target.classList.add("show");
+
+   entry.target.querySelectorAll(".bar span").forEach(bar=>{
+    bar.style.width=bar.dataset.width;
+   });
+  }
+ });
+},{threshold:.15});
+
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+</script>
+
 </body>
-</html>
+  </html>
