@@ -1,1689 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<title>Hakeem Taofeek | SUP_GUYZ | Founder of Netpay</title>
 
-<title>
-Hakeem Taofeek | SUP_GUYZ | Founder of Netpay
-</title>
+<meta name="description" content="Official website of Hakeem Taofeek Ayinde, popularly known as SUP_GUYZ. Student, digital entrepreneur, technology enthusiast and founder of Netpay and Tao Media Academy.">
 
-<meta name="description"
-content="Official website of Hakeem Taofeek Ayinde, popularly known as SUP_GUYZ. Student, technology enthusiast, digital entrepreneur, founder of Netpay and Tao Media Academy.">
+<meta name="author" content="Hakeem Taofeek Ayinde">
+<meta name="robots" content="index, follow, max-image-preview:large">
 
-<meta name="author"
-content="Hakeem Taofeek Ayinde">
+<link rel="canonical" href="https://taofeek4.github.io/hakeem-taofeek-sug/">
 
-<meta name="robots"
-content="index, follow">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Hakeem Taofeek | SUP_GUYZ">
+<meta property="og:description" content="Official profile of Hakeem Taofeek Ayinde, SUP_GUYZ, founder of Netpay and Tao Media Academy.">
+<meta property="og:url" content="https://taofeek4.github.io/hakeem-taofeek-sug/">
+<meta property="og:image" content="https://taofeek4.github.io/hakeem-taofeek-sug/assets/hakeem-taofeek.png">
+<meta property="og:image:alt" content="Hakeem Taofeek Ayinde popularly known as SUP_GUYZ">
 
-<link rel="canonical"
-href="https://taofeek4.github.io/hakeem-taofeek-sug/">
-
-<!-- OPEN GRAPH -->
-
-<meta property="og:type"
-content="profile">
-
-<meta property="og:title"
-content="Hakeem Taofeek | SUP_GUYZ">
-
-<meta property="og:description"
-content="Official profile of Hakeem Taofeek, SUP_GUYZ, founder of Netpay and Tao Media Academy.">
-
-<meta property="og:url"
-content="https://taofeek4.github.io/hakeem-taofeek-sug/">
-
-<meta property="og:image"
-content="https://taofeek4.github.io/hakeem-taofeek-sug/hakeem-taofeek.png">
-
-<meta property="og:image:alt"
-content="Hakeem Taofeek Ayinde">
-
-<!-- TWITTER -->
-
-<meta name="twitter:card"
-content="summary_large_image">
-
-<meta name="twitter:title"
-content="Hakeem Taofeek | SUP_GUYZ">
-
-<meta name="twitter:description"
-content="Official website of Hakeem Taofeek, founder of Netpay and Tao Media Academy.">
-
-<meta name="twitter:image"
-content="https://taofeek4.github.io/hakeem-taofeek-sug/hakeem-taofeek.png">
-
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hakeem Taofeek | SUP_GUYZ">
+<meta name="twitter:description" content="Official profile of Hakeem Taofeek Ayinde, founder of Netpay and Tao Media Academy.">
+<meta name="twitter:image" content="https://taofeek4.github.io/hakeem-taofeek-sug/assets/hakeem-taofeek.png">
 
 <style>
 
-/* =========================================
-   RESET
-========================================= */
+:root{
+--navy:#071a36;
+--blue:#1769e0;
+--cyan:#19a8e8;
+--sky:#eaf6ff;
+--bg:#f7faff;
+--white:#ffffff;
+--text:#122033;
+--muted:#65748b;
+--border:#dfe8f2;
+--shadow:0 18px 50px rgba(17,57,96,.10);
+--radius:22px;
+}
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-
-    background:#ffffff;
-    color:#132238;
-
-    line-height:1.6;
-
-    overflow-x:hidden;
-}
-
-img{
-    max-width:100%;
-    display:block;
+font-family:Arial,Helvetica,sans-serif;
+background:#fff;
+color:var(--text);
+line-height:1.65;
 }
 
 a{
-    text-decoration:none;
-    color:inherit;
+color:inherit;
+text-decoration:none;
+}
+
+img{
+display:block;
+max-width:100%;
 }
 
 .container{
-    width:92%;
-    max-width:1150px;
-    margin:auto;
+width:min(1120px,92%);
+margin:auto;
 }
 
-
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER */
 
 header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-
-    background:rgba(255,255,255,.97);
-
-    border-bottom:
-    1px solid #e7edf5;
-
-    backdrop-filter:blur(12px);
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(255,255,255,.97);
+border-bottom:1px solid var(--border);
 }
 
 .navbar{
-    min-height:76px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+min-height:78px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
 }
 
 .logo-area{
-    display:flex;
-    align-items:center;
-    gap:11px;
+display:flex;
+align-items:center;
+gap:12px;
 }
 
 .logo{
-    width:46px;
-    height:46px;
-
-    border-radius:13px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    color:white;
-
-    font-size:16px;
-    font-weight:900;
-
-    background:
-    linear-gradient(
-        135deg,
-        #1677ff,
-        #20c4ed
-    );
+width:48px;
+height:48px;
+border-radius:14px;
+display:grid;
+place-items:center;
+color:#fff;
+font-weight:800;
+background:linear-gradient(135deg,var(--blue),var(--cyan));
+box-shadow:0 8px 22px rgba(23,105,224,.22);
 }
 
 .logo-text strong{
-    display:block;
-
-    font-size:14px;
-
-    color:#102036;
+display:block;
+font-size:16px;
 }
 
 .logo-text span{
-    display:block;
-
-    margin-top:1px;
-
-    color:#1677ff;
-
-    font-size:10px;
-
-    font-weight:900;
-
-    letter-spacing:2px;
+display:block;
+color:var(--blue);
+font-size:12px;
+font-weight:800;
+letter-spacing:2px;
 }
 
-.nav{
-    display:flex;
-
-    align-items:center;
-
-    gap:25px;
+.nav-links{
+display:flex;
+align-items:center;
+gap:25px;
 }
 
-.nav a{
-    color:#566579;
-
-    font-size:13px;
-
-    font-weight:700;
+.nav-links a{
+font-size:14px;
+font-weight:700;
+color:#536176;
 }
 
-.nav a:hover{
-    color:#1677ff;
+.nav-links a:hover{
+color:var(--blue);
 }
 
-.menu{
-    display:none;
-
-    border:0;
-    background:none;
-
-    font-size:30px;
-
-    color:#102036;
-
-    cursor:pointer;
+.menu-button{
+display:none;
+border:0;
+background:transparent;
+font-size:30px;
+cursor:pointer;
+color:var(--navy);
 }
 
-
-/* =========================================
-   HERO
-========================================= */
+/* HERO */
 
 .hero{
-    min-height:650px;
-
-    display:flex;
-    align-items:center;
-
-    background:
-    radial-gradient(
-        circle at 90% 10%,
-        #dff6ff,
-        transparent 30%
-    ),
-
-    linear-gradient(
-        135deg,
-        #f3f8ff,
-        #ffffff 60%
-    );
-
-    padding:90px 0;
+padding:90px 0 80px;
+background:
+radial-gradient(circle at 90% 10%,#d9f4ff 0,transparent 32%),
+radial-gradient(circle at 10% 20%,#e8f1ff 0,transparent 30%),
+var(--bg);
 }
 
 .hero-grid{
-    display:grid;
-
-    grid-template-columns:
-    1.1fr .9fr;
-
-    gap:65px;
-
-    align-items:center;
+display:grid;
+grid-template-columns:1.1fr .9fr;
+align-items:center;
+gap:60px;
 }
 
-.badge{
-    display:inline-block;
-
-    padding:9px 17px;
-
-    border-radius:50px;
-
-    background:#e4f1ff;
-
-    color:#1677ff;
-
-    font-size:11px;
-
-    font-weight:900;
-
-    letter-spacing:2px;
+.label,
+.section-label{
+display:inline-block;
+color:var(--blue);
+font-size:11px;
+font-weight:900;
+letter-spacing:2px;
+text-transform:uppercase;
 }
 
-.hero h1{
-    margin-top:22px;
-
-    font-size:
-    clamp(50px,7vw,82px);
-
-    line-height:.98;
-
-    letter-spacing:-4px;
-
-    color:#081a31;
+.label{
+padding:10px 17px;
+border-radius:999px;
+background:#e5f2ff;
+margin-bottom:22px;
 }
 
-.hero h1 span{
-    color:#1677ff;
+h1{
+font-size:clamp(48px,7vw,78px);
+line-height:.98;
+letter-spacing:-3px;
+margin-bottom:25px;
 }
 
-.hero-description{
-    max-width:650px;
-
-    margin-top:25px;
-
-    color:#647286;
-
-    font-size:17px;
+h1 span{
+color:var(--blue);
 }
 
-.hero-description strong{
-    color:#15243a;
+.hero p{
+max-width:650px;
+font-size:18px;
+color:var(--muted);
+margin-bottom:30px;
 }
 
-.hero-buttons{
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:12px;
-
-    margin-top:30px;
+.hero p strong{
+color:var(--text);
 }
 
-.btn{
-    display:inline-flex;
-
-    align-items:center;
-    justify-content:center;
-
-    padding:13px 21px;
-
-    border-radius:10px;
-
-    font-size:14px;
-
-    font-weight:800;
-
-    transition:.25s;
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
 }
 
-.btn-primary{
-    color:white;
-
-    background:#1677ff;
-
-    box-shadow:
-    0 12px 28px
-    rgba(22,119,255,.22);
+.button{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:14px 20px;
+border-radius:12px;
+font-weight:800;
+font-size:14px;
 }
 
-.btn-primary:hover{
-    transform:translateY(-3px);
-
-    background:#0e63d7;
+.button-primary{
+background:var(--blue);
+color:#fff;
+box-shadow:0 10px 25px rgba(23,105,224,.25);
 }
 
-.btn-outline{
-    color:#17273c;
-
-    background:white;
-
-    border:
-    1px solid #d8e1ec;
+.button-primary:hover{
+background:#0d59c7;
 }
 
-.btn-outline:hover{
-    border-color:#1677ff;
-
-    color:#1677ff;
-
-    transform:translateY(-3px);
+.button-light{
+background:#fff;
+color:var(--text);
+border:1px solid var(--border);
 }
 
-
-/* =========================================
-   HERO IMAGE
-========================================= */
-
-.hero-image{
-    display:flex;
-
-    justify-content:center;
+.button-light:hover{
+border-color:var(--blue);
+color:var(--blue);
 }
 
-.image-frame{
-    width:min(390px,100%);
+/* PHOTO */
 
-    padding:8px;
-
-    border-radius:29px;
-
-    background:
-    linear-gradient(
-        135deg,
-        #1677ff,
-        #20c4ed
-    );
-
-    box-shadow:
-    0 30px 70px
-    rgba(25,70,110,.18);
+.photo-wrap{
+width:min(440px,100%);
+margin:auto;
+padding:9px;
+border-radius:30px;
+background:linear-gradient(135deg,var(--blue),var(--cyan));
+box-shadow:0 25px 60px rgba(23,105,224,.20);
 }
 
-.image-frame img{
-    width:100%;
-
-    aspect-ratio:1/1;
-
-    object-fit:cover;
-
-    border-radius:22px;
-
-    background:#ffffff;
+.photo-wrap img{
+width:100%;
+aspect-ratio:4/5;
+object-fit:cover;
+border-radius:23px;
+background:#edf3f8;
 }
 
-
-/* =========================================
-   GENERAL SECTIONS
-========================================= */
+/* SECTIONS */
 
 section{
-    padding:90px 0;
-}
-
-.section-label{
-    color:#1677ff;
-
-    font-size:10px;
-
-    font-weight:900;
-
-    letter-spacing:2.5px;
-
-    text-transform:uppercase;
+padding:90px 0;
 }
 
 .section-heading{
-    max-width:760px;
-
-    margin-bottom:42px;
+max-width:760px;
+margin-bottom:40px;
 }
 
-.section-heading h2{
-    margin-top:9px;
+.section-label{
+margin-bottom:10px;
+}
 
-    color:#0b1d34;
-
-    font-size:
-    clamp(31px,5vw,48px);
-
-    line-height:1.1;
-
-    letter-spacing:-1.5px;
+h2{
+font-size:clamp(32px,5vw,48px);
+line-height:1.1;
+letter-spacing:-1.5px;
+margin-bottom:12px;
 }
 
 .section-heading p{
-    margin-top:14px;
-
-    color:#68768a;
-
-    font-size:15px;
+color:var(--muted);
+font-size:16px;
 }
 
+/* CARDS */
 
-/* =========================================
-   ABOUT
-========================================= */
-
-.about-grid{
-    display:grid;
-
-    grid-template-columns:
-    1fr 1fr;
-
-    gap:22px;
+.cards{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:22px;
 }
 
 .card{
-    padding:32px;
-
-    border:
-    1px solid #e1e8f0;
-
-    border-radius:20px;
-
-    background:#ffffff;
-
-    box-shadow:
-    0 15px 40px
-    rgba(25,55,90,.06);
+padding:30px;
+background:#fff;
+border:1px solid var(--border);
+border-radius:var(--radius);
+box-shadow:var(--shadow);
 }
 
 .card h3{
-    color:#0c1e34;
-
-    font-size:21px;
-
-    margin-bottom:12px;
+font-size:21px;
+margin-bottom:12px;
 }
 
 .card p{
-    color:#68768a;
-
-    font-size:14px;
+color:var(--muted);
+font-size:15px;
 }
 
-.highlight{
-    color:#1677ff;
-
-    font-weight:800;
+.card p+p{
+margin-top:15px;
 }
 
-
-/* =========================================
-   STATS
-========================================= */
-
-.stats{
-    display:grid;
-
-    grid-template-columns:
-    repeat(4,1fr);
-
-    gap:16px;
-
-    margin-top:25px;
-}
-
-.stat{
-    padding:24px 15px;
-
-    text-align:center;
-
-    background:#f5f9ff;
-
-    border:
-    1px solid #e3edf8;
-
-    border-radius:16px;
-}
-
-.stat strong{
-    display:block;
-
-    color:#1677ff;
-
-    font-size:27px;
-}
-
-.stat span{
-    color:#68768a;
-
-    font-size:12px;
-
-    font-weight:700;
-}
-
-
-/* =========================================
-   BRANDS
-========================================= */
+/* BRANDS */
 
 .brand-grid{
-    display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
 }
 
-.brand{
-    padding:30px;
-
-    border:
-    1px solid #e1e8f0;
-
-    border-radius:19px;
-
-    background:
-    linear-gradient(
-        180deg,
-        #ffffff,
-        #f7faff
-    );
-
-    transition:.25s;
+.brand-card{
+padding:28px;
+border:1px solid var(--border);
+border-radius:20px;
+background:linear-gradient(180deg,#fff,#f7fbff);
 }
 
-.brand:hover{
-    transform:translateY(-6px);
-
-    border-color:#b9d8ff;
-
-    box-shadow:
-    0 18px 45px
-    rgba(20,65,110,.09);
+.number{
+color:var(--blue);
+font-weight:900;
+font-size:12px;
+margin-bottom:15px;
 }
 
-.brand-number{
-    color:#1677ff;
-
-    font-size:11px;
-
-    font-weight:900;
+.brand-card h3{
+margin-bottom:10px;
 }
 
-.brand h3{
-    margin-top:8px;
-
-    color:#0c1e34;
-
-    font-size:22px;
-}
-
-.brand p{
-    margin-top:8px;
-
-    color:#68768a;
-
-    font-size:14px;
-}
-
-
-/* =========================================
-   NETPAY
-========================================= */
-
-.netpay{
-    background:#071a30;
-
-    color:white;
-}
-
-.netpay-grid{
-    display:grid;
-
-    grid-template-columns:
-    1.15fr .85fr;
-
-    gap:55px;
-
-    align-items:center;
-}
-
-.netpay .section-label{
-    color:#35c9f2;
-}
-
-.netpay h2{
-    margin-top:9px;
-
-    font-size:
-    clamp(36px,5vw,54px);
-
-    line-height:1.05;
-
-    letter-spacing:-2px;
-}
-
-.netpay h2 span{
-    color:#35c9f2;
-}
-
-.netpay p{
-    margin-top:17px;
-
-    color:#b5c5d6;
-
-    font-size:15px;
-}
-
-.netpay-features{
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:10px;
-
-    margin-top:25px;
-}
-
-.netpay-feature{
-    padding:14px;
-
-    color:#dce8f4;
-
-    background:
-    rgba(255,255,255,.05);
-
-    border:
-    1px solid
-    rgba(255,255,255,.09);
-
-    border-radius:10px;
-
-    font-size:13px;
-
-    font-weight:700;
-}
-
-.netpay-box{
-    padding:32px;
-
-    background:white;
-
-    color:#132238;
-
-    border-radius:21px;
-
-    box-shadow:
-    0 20px 50px
-    rgba(0,0,0,.18);
-}
-
-.netpay-box h3{
-    font-size:28px;
-}
-
-.netpay-box p{
-    color:#68768a;
-
-    font-size:14px;
-}
-
-.netpay-box .btn{
-    margin-top:20px;
-}
-
-
-/* =========================================
-   SERVICES / SEO
-========================================= */
-
-.services-section{
-    background:#f6f9fd;
-}
-
-.services-grid{
-    display:grid;
-
-    grid-template-columns:
-    1fr 1fr;
-
-    gap:22px;
-}
-
-.service{
-    padding:30px;
-
-    background:white;
-
-    border:
-    1px solid #e0e8f1;
-
-    border-radius:19px;
-
-    box-shadow:
-    0 12px 35px
-    rgba(20,50,80,.05);
-}
-
-.service h3{
-    color:#0b1e34;
-
-    font-size:21px;
-}
-
-.service p{
-    margin-top:10px;
-
-    color:#68768a;
-
-    font-size:14px;
-}
-
-.tags{
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:8px;
-
-    margin-top:20px;
-}
-
-.tag{
-    padding:7px 11px;
-
-    border-radius:50px;
-
-    background:#eaf4ff;
-
-    color:#1762b5;
-
-    font-size:11px;
-
-    font-weight:800;
-}
-
-
-/* =========================================
-   LEADERSHIP
-========================================= */
-
-.leadership-grid{
-    display:grid;
-
-    grid-template-columns:
-    1fr 1fr;
-
-    gap:20px;
-}
-
-.leader{
-    padding:30px;
-
-    border:
-    1px solid #e1e8f0;
-
-    border-radius:19px;
-
-    background:white;
-
-    box-shadow:
-    0 12px 35px
-    rgba(20,50,80,.05);
-}
-
-.leader-icon{
-    width:45px;
-    height:45px;
-
-    display:flex;
-
-    align-items:center;
-    justify-content:center;
-
-    border-radius:12px;
-
-    background:#eaf4ff;
-
-    color:#1677ff;
-
-    font-size:20px;
-}
-
-.leader h3{
-    margin-top:17px;
-
-    color:#0b1e34;
-}
-
-.leader p{
-    margin-top:9px;
-
-    color:#68768a;
-
-    font-size:14px;
-}
-
-
-/* =========================================
-   INTERESTS
-========================================= */
-
-.interests{
-    background:#f6f9fd;
-}
-
-.interest-grid{
-    display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-    gap:17px;
-}
-
-.interest{
-    padding:23px;
-
-    border-radius:16px;
-
-    background:white;
-
-    border:
-    1px solid #e2e9f1;
-}
-
-.interest strong{
-    display:block;
-
-    color:#10233b;
-}
-
-.interest span{
-    display:block;
-
-    margin-top:5px;
-
-    color:#68768a;
-
-    font-size:13px;
-}
-
-
-/* =========================================
-   SOCIAL
-========================================= */
-
-.social-grid{
-    display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-    gap:18px;
-}
-
-.social{
-    padding:27px;
-
-    border:
-    1px solid #e1e8f0;
-
-    border-radius:18px;
-
-    background:white;
-
-    transition:.25s;
-}
-
-.social:hover{
-    transform:translateY(-5px);
-
-    box-shadow:
-    0 18px 40px
-    rgba(20,50,80,.08);
-}
-
-.social-icon{
-    font-size:25px;
-}
-
-.social h3{
-    margin-top:12px;
-
-    color:#0b1e34;
-}
-
-.social p{
-    margin-top:5px;
-
-    color:#68768a;
-
-    font-size:13px;
-}
-
-.social-link{
-    display:inline-block;
-
-    margin-top:13px;
-
-    color:#1677ff;
-
-    font-size:12px;
-
-    font-weight:900;
-}
-
-
-/* =========================================
-   CONTACT
-========================================= */
-
-.contact{
-    background:
-    linear-gradient(
-        135deg,
-        #eef7ff,
-        #f8fdff
-    );
-}
-
-.contact-box{
-    padding:50px;
-
-    text-align:center;
-
-    border-radius:25px;
-
-    background:white;
-
-    border:
-    1px solid #dfe9f3;
-
-    box-shadow:
-    0 20px 50px
-    rgba(20,60,100,.07);
-}
-
-.contact-box h2{
-    color:#0a1d34;
-
-    font-size:
-    clamp(30px,5vw,45px);
-}
-
-.contact-box p{
-    max-width:650px;
-
-    margin:13px auto 0;
-
-    color:#68768a;
-}
-
-.contact-buttons{
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:12px;
-
-    margin-top:25px;
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer{
-    padding:42px 0;
-
-    text-align:center;
-
-    background:#04111f;
-
-    color:#91a5ba;
-}
-
-footer strong{
-    color:white;
-}
-
-.footer-links{
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:18px;
-
-    margin-top:16px;
-}
-
-.footer-links a{
-    color:#91a5ba;
-
-    font-size:12px;
-}
-
-.footer-links a:hover{
-    color:#35c9f2;
-}
-
-
-/* =========================================
-   BACK TO TOP
-========================================= */
-
-.top-button{
-    position:fixed;
-
-    right:18px;
-    bottom:18px;
-
-    width:45px;
-    height:45px;
-
-    border:0;
-
-    border-radius:50%;
-
-    background:#1677ff;
-
-    color:white;
-
-    font-size:18px;
-
-    cursor:pointer;
-
-    display:none;
-
-    align-items:center;
-    justify-content:center;
-
-    box-shadow:
-    0 10px 25px
-    rgba(22,119,255,.3);
-
-    z-index:999;
-}
-
-.top-button.show{
-    display:flex;
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media(max-width:800px){
-
-    .navbar{
-        min-height:70px;
-    }
-
-    .menu{
-        display:block;
-    }
-
-    .nav{
-        display:none;
-
-        position:absolute;
-
-        top:70px;
-        left:0;
-
-        width:100%;
-
-        padding:22px;
-
-        background:white;
-
-        border-bottom:
-        1px solid #e3eaf2;
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        gap:17px;
-    }
-
-    .nav.open{
-        display:flex;
-    }
-
-    .hero{
-        padding:60px 0 75px;
-    }
-
-    .hero-grid{
-        grid-template-columns:1fr;
-
-        gap:40px;
-    }
-
-    .hero-image{
-        order:-1;
-    }
-
-    .image-frame{
-        width:min(340px,90%);
-    }
-
-    .hero h1{
-        font-size:54px;
-
-        letter-spacing:-2.5px;
-    }
-
-    .hero-description{
-        font-size:16px;
-    }
-
-    .about-grid,
-    .services-grid,
-    .leadership-grid{
-        grid-template-columns:1fr;
-    }
-
-    .brand-grid,
-    .social-grid{
-        grid-template-columns:1fr;
-    }
-
-    .stats{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .interest-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .netpay-grid{
-        grid-template-columns:1fr;
-    }
-
-    .netpay-features{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .contact-box{
-        padding:35px 22px;
-    }
-
-}
-
-
-/* =========================================
-   SMALL PHONES
-========================================= */
-
-@media(max-width:500px){
-
-    section{
-        padding:70px 0;
-    }
-
-    .container{
-        width:90%;
-    }
-
-    .hero h1{
-        font-size:48px;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-    }
-
-    .btn{
-        width:100%;
-    }
-
-    .stats{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .interest-grid{
-        grid-template-columns:1fr;
-    }
-
-    .netpay-features{
-        grid-template-columns:1fr;
-    }
-
-    .contact-buttons{
-        flex-direction:column;
-    }
-
-}
-
-
-/* =========================================
-   ANIMATION
-========================================= */
-
-.reveal{
-    opacity:0;
-
-    transform:translateY(20px);
-
-    transition:
-    opacity .7s ease,
-    transform .7s ease;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-      }
-
-</style>
-
-</head>
-
-
-<body>
-
-
-<!-- ========================================
-     HEADER
-========================================= -->
-
-<header>
-
-<div class="container navbar">
-
-<a href="#home" class="logo-area">
-
-<div class="logo">
-HT
-</div>
-
-<div class="logo-text">
-
-<strong>
-HAKEEM TAOFEEK
-</strong>
-
-<span>
-SUP_GUYZ
-</span>
-
-</div>
-
-</a>
-
-
-<button
-class="menu"
-id="menuButton"
-aria-label="Open navigation">
-
-☰
-
-</button>
-
-
-<nav
-class="nav"
-id="navigation">
-
-<a href="#home">
-Home
-</a>
-
-<a href="#about">
-About
-</a>
-
-<a href="#brands">
-Brands
-</a>
-
-<a href="#netpay">
-Netpay
-</a>
-
-<a href="#leadership">
-Leadership
-</a>
-
-<a href="#official">
-Accounts
-</a>
-
-<a href="#contact">
-Contact
-</a>
-
-</nav>
-
-</div>
-
-</header>
-
-
-<!-- ========================================
-     HERO
-========================================= -->
-
-<main>
-
-<section
-class="hero"
-id="home">
-
-<div class="container hero-grid">
-
-
-<div class="reveal">
-
-<span class="badge">
-OFFICIAL PROFILE
-</span>
-
-
-<h1>
-
-Hakeem
-<br>
-
-<span>
-Taofeek.
-</span>
-
-</h1>
-
-
-<p class="hero-description">
-
-<strong>
-Hakeem Taofeek Ayinde
-</strong>,
-
-popularly known as
-
-<strong>
-SUP_GUYZ
-</strong>,
-
-is a student, digital entrepreneur,
-technology enthusiast and founder of
-
-<strong>
-Netpay
-</strong>
-
-and
-
-<strong>
-Tao Media Academy
-</strong>.
-
-</p>
-
-
-<div class="hero-buttons">
-
-<a
-href="#about"
-class="btn btn-primary">
-
-Explore My Profile
-
-</a>
-
-
-<a
-href="https://netpay.com.ng"
-target="_blank"
-rel="noopener"
-class="btn btn-outline">
-
-Visit Netpay
-
-</a>
-
-</div>
-
-</div>
-
-
-<div class="hero-image reveal">
-
-<div class="image-frame">
-
-<img
-src="hakeem-taofeek.png"
-alt="Hakeem Taofeek Ayinde popularly known as SUP_GUYZ">
-
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- ========================================
-     ABOUT
-========================================= -->
-
-<section id="about">
-
-<div class="container">
-
-
-<div class="section-heading reveal">
-
-<span class="section-label">
-About Me
-</span>
-
-<h2>
-Student, Creator & Entrepreneur
-</h2>
-
-<p>
-A personal profile covering my education,
-digital work, technology interests,
-leadership and entrepreneurial projects.
-</p>
-
-</div>
-
-
-<div class="about-grid">
-
-
-<article class="card reveal">
-
-<h3>
-Who is Hakeem Taofeek?
-</h3>
-
-<p>
-
-<strong class="highlight">
-Hakeem Taofeek Ayinde
-</strong>,
-
-popularly known as
-
-<strong class="highlight">
-SUP_GUYZ
-</strong>,
-
-is a student of the
-
-<strong>
-Federal College of Animal Health and
-Production Technology
-</strong>.
-
-</p>
-
-<br>
-
-<p>
-
-He is interested in technology,
-artificial intelligence, digital media,
-AI content creation, digital skills,
-entrepreneurship and online services.
-
-</p>
-
-</article>
-
-
-<article class="card reveal">
-
-<h3>
-Tao Media Academy
-</h3>
-
-<p>
-
-<strong>
-Tao Media Academy
-</strong>
-
-is the digital-media identity associated
-with Hakeem Taofeek.
-
-It focuses on technology, AI,
-digital content, media and online skills.
-
-</p>
-
-</article>
-
-
-</div>
-
-
-<div class="stats reveal">
-
-<div class="stat">
-
-<strong>
-01
-</strong>
-
-<span>
-Founder
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>
-AI
-</strong>
-
-<span>
-Technology & Content
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>
-SUG
-</strong>
-
-<span>
-Student Leadership
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>
-NG
-</strong>
-
-<span>
-Nigeria
-</span>
-
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- ========================================
-     BRANDS
-========================================= -->
-
-<section id="brands">
-
-<div class="container">
-
-
-<div class="section-heading reveal">
-
-<span class="section-label">
-Digital Identity
-</span>
-
-<h2>
-My Brands & Projects
-</h2>
-
-<p>
-The names and projects connected to my
-digital journey.
-</p>
-
-</div>
-
-
-<div class="brand-grid">
-
-
-<article class="brand reveal">
-
-<span class="brand-number">
-01
-</span>
-
-<h3>
-SUP_GUYZ
-</h3>
-
-<p>
-My personal digital identity and
-online brand.
-</p>
-
-</article>
-
-
-<article class="brand reveal">
-
-<span class="brand-number">
-02
-</span>
-
-<h3>
-Tao Media Academy
-</h3>
-
-<p>
-A technology, AI, digital-media and
-content-creation identity.
-</p>
-
-</article>
-
-
-<article class="brand reveal">
-
-<span class="brand-number
+.brand-card p{
+color:var(--muted);
+font-size:14
